@@ -1,0 +1,300 @@
+Device: mps
+Time budget: 30s
+Model type: lstm
+Key-point weight: 2.0x
+
+--- Data Loading ---
+Loading Grand Slam PBP data...
+  2011-ausopen-points.csv                       →  31,523 points  (year=2011)
+  2011-frenchopen-points.csv                    →  34,340 points  (year=2011)
+  2011-usopen-points.csv                        →  27,309 points  (year=2011)
+  2011-wimbledon-points.csv                     →  21,368 points  (year=2011)
+  2012-ausopen-points.csv                       →  29,001 points  (year=2012)
+  2012-frenchopen-points.csv                    →  31,184 points  (year=2012)
+  2012-usopen-points.csv                        →  30,975 points  (year=2012)
+  2012-wimbledon-points.csv                     →  25,920 points  (year=2012)
+  2013-ausopen-points.csv                       →  31,688 points  (year=2013)
+  2013-frenchopen-points.csv                    →  33,248 points  (year=2013)
+  2013-usopen-points.csv                        →  30,353 points  (year=2013)
+  2013-wimbledon-points.csv                     →  25,691 points  (year=2013)
+  2014-ausopen-points.csv                       →  27,659 points  (year=2014)
+  2014-frenchopen-points.csv                    →  44,426 points  (year=2014)
+  2014-usopen-points.csv                        →  33,159 points  (year=2014)
+  2014-wimbledon-points.csv                     →  47,619 points  (year=2014)
+  2015-ausopen-points.csv                       →  38,309 points  (year=2015)
+  2015-frenchopen-points.csv                    →  37,208 points  (year=2015)
+  2015-usopen-points.csv                        →  31,442 points  (year=2015)
+  2015-wimbledon-points.csv                     →  46,819 points  (year=2015)
+  2016-ausopen-points.csv                       →  41,312 points  (year=2016)
+  2016-frenchopen-points.csv                    →  32,165 points  (year=2016)
+  2016-usopen-points.csv                        →  30,606 points  (year=2016)
+  2016-wimbledon-points.csv                     →  29,102 points  (year=2016)
+  2017-ausopen-points.csv                       →  43,933 points  (year=2017)
+  2017-frenchopen-points.csv                    →  43,122 points  (year=2017)
+  2017-usopen-points.csv                        →  30,067 points  (year=2017)
+  2017-wimbledon-points.csv                     →  45,774 points  (year=2017)
+  2018-ausopen-points.csv                       →  47,540 points  (year=2018)
+  2018-frenchopen-points.csv                    →  45,529 points  (year=2018)
+  2018-usopen-points.csv                        →  31,851 points  (year=2018)
+  2018-wimbledon-points.csv                     →  49,281 points  (year=2018)
+  2019-ausopen-points.csv                       →  46,663 points  (year=2019)
+  2019-frenchopen-points.csv                    →  46,185 points  (year=2019)
+  2019-usopen-points.csv                        →  47,893 points  (year=2019)
+  2019-wimbledon-points.csv                     →  47,045 points  (year=2019)
+  2020-ausopen-points.csv                       →  46,530 points  (year=2020)
+  2020-frenchopen-points.csv                    →  46,273 points  (year=2020)
+  2020-usopen-points.csv                        →  45,157 points  (year=2020)
+  2021-ausopen-points.csv                       →  44,412 points  (year=2021)
+  2021-frenchopen-points.csv                    →  46,313 points  (year=2021)
+  2021-usopen-points.csv                        →  47,867 points  (year=2021)
+  2021-wimbledon-points.csv                     →  47,106 points  (year=2021)
+  2022-usopen-points.csv                        →  47,243 points  (year=2022)
+  2022-wimbledon-points.csv                     →  46,361 points  (year=2022)
+  2023-usopen-points.csv                        →  45,445 points  (year=2023)
+  2023-wimbledon-points.csv                     →  48,676 points  (year=2023)
+  2024-usopen-points.csv                        →  45,289 points  (year=2024)
+  2024-wimbledon-points.csv                     →  48,155 points  (year=2024)
+  train: 1,734,571 points
+  val  :    94,121 points
+  test :    93,444 points
+
+Engineering features...
+  Train features: (1725367, 29)
+  Val features:   (93103, 29)
+  Test features:  (92427, 29)
+  Feature count:  29
+  Features: ['PointServer_num', 'ServeNumber_num', 'P1Score_num', 'P2Score_num', 'ScoreDiff', 'SetNo_num', 'P1GamesWon_num', 'P2GamesWon_num', 'GameDiff', 'P1Momentum_num', 'P2Momentum_num', 'MomentumDiff', 'P1PointsWon_num', 'P2PointsWon_num', 'PointsWonDiff', 'RallyCount_num', 'Speed_KMH_num', 'P1BreakPoint_num', 'P2BreakPoint_num', 'IsBreakPoint', 'P1Distance_num', 'P2Distance_num', 'ServeDir_enc', 'ServeWidth_enc', 'ServeDepth_enc', 'ReturnDepth_enc', 'ScorePressure', 'IsTiebreak', 'ServerAhead']
+  Train key points: 609,554 (35.3%)
+
+Input dimension: 29
+Features: ['PointServer_num', 'ServeNumber_num', 'P1Score_num', 'P2Score_num', 'ScoreDiff', 'SetNo_num', 'P1GamesWon_num', 'P2GamesWon_num', 'GameDiff', 'P1Momentum_num', 'P2Momentum_num', 'MomentumDiff', 'P1PointsWon_num', 'P2PointsWon_num', 'PointsWonDiff', 'RallyCount_num', 'Speed_KMH_num', 'P1BreakPoint_num', 'P2BreakPoint_num', 'IsBreakPoint', 'P1Distance_num', 'P2Distance_num', 'ServeDir_enc', 'ServeWidth_enc', 'ServeDepth_enc', 'ReturnDepth_enc', 'ScorePressure', 'IsTiebreak', 'ServerAhead']
+Train batches: 13479
+Val batches: 728
+Key pts in train seqs: 609,552 / 1,725,357 (35.3%)
+
+--- Model ---
+Model parameters: 59,841
+
+--- Training ---
+
+step 00100 (1.5%) | loss: 0.949326 | lr: 0.000040 | dt: 5ms | epoch: 1 | remaining: 30s    
+step 00200 (3.3%) | loss: 0.938876 | lr: 0.000041 | dt: 6ms | epoch: 1 | remaining: 29s    
+step 00300 (5.3%) | loss: 0.930397 | lr: 0.000043 | dt: 5ms | epoch: 1 | remaining: 28s    
+step 00400 (7.2%) | loss: 0.939219 | lr: 0.000046 | dt: 5ms | epoch: 1 | remaining: 28s    
+step 00500 (9.1%) | loss: 0.936666 | lr: 0.000049 | dt: 6ms | epoch: 1 | remaining: 27s    
+step 00600 (11.0%) | loss: 0.932523 | lr: 0.000053 | dt: 5ms | epoch: 1 | remaining: 27s    
+step 00700 (12.8%) | loss: 0.939136 | lr: 0.000058 | dt: 10ms | epoch: 1 | remaining: 26s    
+step 00800 (14.7%) | loss: 0.932707 | lr: 0.000063 | dt: 5ms | epoch: 1 | remaining: 26s    
+step 00900 (16.5%) | loss: 0.930362 | lr: 0.000069 | dt: 10ms | epoch: 1 | remaining: 25s    
+step 01000 (18.3%) | loss: 0.929140 | lr: 0.000076 | dt: 5ms | epoch: 1 | remaining: 25s    
+step 01100 (20.0%) | loss: 0.925091 | lr: 0.000083 | dt: 5ms | epoch: 1 | remaining: 24s    
+step 01200 (21.9%) | loss: 0.915977 | lr: 0.000091 | dt: 5ms | epoch: 1 | remaining: 23s    
+step 01300 (23.7%) | loss: 0.933849 | lr: 0.000100 | dt: 5ms | epoch: 1 | remaining: 23s    
+step 01400 (25.7%) | loss: 0.916936 | lr: 0.000109 | dt: 6ms | epoch: 1 | remaining: 22s    
+step 01500 (27.5%) | loss: 0.924056 | lr: 0.000119 | dt: 5ms | epoch: 1 | remaining: 22s    
+step 01600 (29.3%) | loss: 0.914917 | lr: 0.000130 | dt: 5ms | epoch: 1 | remaining: 21s    
+step 01700 (31.0%) | loss: 0.923554 | lr: 0.000141 | dt: 5ms | epoch: 1 | remaining: 21s    
+step 01800 (32.9%) | loss: 0.913918 | lr: 0.000153 | dt: 5ms | epoch: 1 | remaining: 20s    
+step 01900 (34.7%) | loss: 0.911822 | lr: 0.000165 | dt: 5ms | epoch: 1 | remaining: 20s    
+step 02000 (36.5%) | loss: 0.913796 | lr: 0.000178 | dt: 5ms | epoch: 1 | remaining: 19s    
+step 02100 (38.3%) | loss: 0.905964 | lr: 0.000191 | dt: 5ms | epoch: 1 | remaining: 19s    
+step 02200 (40.2%) | loss: 0.910991 | lr: 0.000205 | dt: 5ms | epoch: 1 | remaining: 18s    
+step 02300 (42.0%) | loss: 0.919297 | lr: 0.000219 | dt: 5ms | epoch: 1 | remaining: 17s    
+step 02400 (43.9%) | loss: 0.899076 | lr: 0.000234 | dt: 5ms | epoch: 1 | remaining: 17s    
+step 02500 (45.9%) | loss: 0.915382 | lr: 0.000249 | dt: 5ms | epoch: 1 | remaining: 16s    
+step 02600 (47.7%) | loss: 0.910368 | lr: 0.000265 | dt: 5ms | epoch: 1 | remaining: 16s    
+step 02700 (49.6%) | loss: 0.905516 | lr: 0.000281 | dt: 5ms | epoch: 1 | remaining: 15s    
+step 02800 (51.4%) | loss: 0.909750 | lr: 0.000297 | dt: 5ms | epoch: 1 | remaining: 15s    
+step 02900 (53.3%) | loss: 0.901482 | lr: 0.000314 | dt: 5ms | epoch: 1 | remaining: 14s    
+step 03000 (55.4%) | loss: 0.897288 | lr: 0.000331 | dt: 5ms | epoch: 1 | remaining: 13s    
+step 03100 (57.5%) | loss: 0.897148 | lr: 0.000348 | dt: 7ms | epoch: 1 | remaining: 13s    
+step 03200 (59.7%) | loss: 0.893477 | lr: 0.000366 | dt: 6ms | epoch: 1 | remaining: 12s    
+step 03300 (61.7%) | loss: 0.894321 | lr: 0.000383 | dt: 6ms | epoch: 1 | remaining: 11s    
+step 03400 (63.6%) | loss: 0.895164 | lr: 0.000401 | dt: 6ms | epoch: 1 | remaining: 11s    
+step 03500 (65.5%) | loss: 0.895643 | lr: 0.000419 | dt: 5ms | epoch: 1 | remaining: 10s    
+step 03600 (67.3%) | loss: 0.902040 | lr: 0.000438 | dt: 6ms | epoch: 1 | remaining: 10s    
+step 03700 (69.2%) | loss: 0.893510 | lr: 0.000456 | dt: 5ms | epoch: 1 | remaining: 9s    
+step 03800 (71.0%) | loss: 0.886755 | lr: 0.000475 | dt: 5ms | epoch: 1 | remaining: 9s    
+step 03900 (72.9%) | loss: 0.889873 | lr: 0.000493 | dt: 5ms | epoch: 1 | remaining: 8s    
+step 04000 (74.7%) | loss: 0.889051 | lr: 0.000512 | dt: 9ms | epoch: 1 | remaining: 8s    
+step 04100 (76.6%) | loss: 0.891782 | lr: 0.000531 | dt: 5ms | epoch: 1 | remaining: 7s    
+step 04200 (78.3%) | loss: 0.884055 | lr: 0.000549 | dt: 5ms | epoch: 1 | remaining: 6s    
+step 04300 (80.2%) | loss: 0.879366 | lr: 0.000568 | dt: 5ms | epoch: 1 | remaining: 6s    
+step 04400 (82.0%) | loss: 0.881644 | lr: 0.000586 | dt: 5ms | epoch: 1 | remaining: 5s    
+step 04500 (83.8%) | loss: 0.877112 | lr: 0.000605 | dt: 6ms | epoch: 1 | remaining: 5s    
+step 04600 (85.6%) | loss: 0.887899 | lr: 0.000623 | dt: 5ms | epoch: 1 | remaining: 4s    
+step 04700 (87.4%) | loss: 0.891046 | lr: 0.000641 | dt: 5ms | epoch: 1 | remaining: 4s    
+step 04800 (89.2%) | loss: 0.881302 | lr: 0.000659 | dt: 5ms | epoch: 1 | remaining: 3s    
+step 04900 (91.0%) | loss: 0.881565 | lr: 0.000677 | dt: 5ms | epoch: 1 | remaining: 3s    
+step 05000 (92.9%) | loss: 0.882113 | lr: 0.000694 | dt: 5ms | epoch: 1 | remaining: 2s    
+step 05100 (94.6%) | loss: 0.879299 | lr: 0.000712 | dt: 5ms | epoch: 1 | remaining: 2s    
+step 05200 (96.4%) | loss: 0.891518 | lr: 0.000729 | dt: 5ms | epoch: 1 | remaining: 1s    
+step 05300 (98.1%) | loss: 0.873904 | lr: 0.000745 | dt: 5ms | epoch: 1 | remaining: 1s    
+step 05400 (99.9%) | loss: 0.892016 | lr: 0.000761 | dt: 5ms | epoch: 1 | remaining: 0s    
+
+--- Final Evaluation ---
+
+--- Tactical Analysis ---
+Overall val accuracy:      0.5578
+Key-point accuracy:        0.7638 (33,198 pts)
+Regular-point accuracy:    0.4436 (59,895 pts)
+Key vs Regular gap:        +32.02%
+
+--- Serve Width → Server Win Rate (Val Set, Empirical) ---
+  W  : overall 71.5% | key-pts 67.3% (7222 pts)
+  C  : overall 68.5% | key-pts 65.2% (8567 pts)
+  B  : overall 53.4% | key-pts 48.9% (4114 pts)
+  BC : overall 54.2% | key-pts 51.5% (6352 pts)
+  BW : overall 55.4% | key-pts 50.9% (6552 pts)
+
+--- Rally Length → Server Win Rate (Val Set) ---
+  Short (1-3)    : server wins 77.2% (41,653 pts)
+  Medium (4-6)   : server wins 36.6% (15,803 pts)
+  Long (7+)      : server wins 57.1% (11,829 pts)
+
+--- Distance Run (Val Set) ---
+  Mean P1 distance: 15.3m
+  Mean P2 distance: 15.2m
+  Player who runs more → wins 38.0% of points (lower = disadvantage)
+
+---
+val_accuracy:     0.557776
+val_auc:          0.577513
+kp_accuracy:      0.763811
+reg_accuracy:     0.443576
+kp_gap:           +32.02%
+training_seconds: 30.0
+total_seconds:    55.8
+peak_vram_mb:     0.0
+total_steps:      5408
+num_params:       59841
+model_type:       lstm
+hidden_dim:       64
+num_layers:       2
+seq_len:          10
+batch_size:       128
+learning_rate:    0.001
+key_point_weight: 2.0
+epochs:           1
+2026-03-16 18:44:24.200 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_24-938053647‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:24.933 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_24-1936880061‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:24.992 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_24-599483731‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:25.034 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_25-200866291‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:25.298 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_25-869643188‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:25.362 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_25-1394418047‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:25.364 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_25-3823033473‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:25.366 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_25-2716513925‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:25.413 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_25-2720878565‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:25.545 python[32338:182245] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_25-1543378747‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:25.604 python[32338:182245] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_25-1948428475‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:25.645 python[32338:182245] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_25-1666883033‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:25.695 python[32338:182245] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_25-1688376011‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:25.972 python[32338:182245] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_25-1135630054‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:26.020 python[32338:182245] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_26-3791467392‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:26.069 python[32338:182245] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_26-1172924161‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:26.231 python[32338:182245] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_26-1491885306‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:26.709 python[32338:182245] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_26-400041664‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.397 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-823927282‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.502 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-759788379‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.504 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-3049319320‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.596 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-863911572‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.598 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-290306506‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.600 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-2286029077‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.601 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-3641607453‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.694 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-3641551536‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.753 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-602465894‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.760 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-3842506933‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.806 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-280707734‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.864 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-3633491872‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.917 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-3373457621‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.919 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-3034123913‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.921 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-668902229‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:27.969 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_27-3976935429‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:28.018 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_28-2981270374‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:28.020 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_28-3339851460‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:28.021 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_28-2621213929‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:28.023 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_28-1238333603‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:28.025 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_28-3144596691‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:28.026 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_28-4264835953‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:28.028 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_28-29633152‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:28.029 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_28-2684849018‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:28.031 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_28-2403625666‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:44:28.081 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_44_28-1191703266‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:01.789 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_01-1926686527‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:01.825 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_01-2145002719‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:01.894 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_01-1536790831‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:04.284 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_04-1386329209‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:04.582 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_04-2951596019‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:04.710 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_04-63689029‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:04.712 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_04-1818389035‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:04.713 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_04-2803734550‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:04.715 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_04-1420163131‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:06.777 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_06-1556350975‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:06.845 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_06-1625335088‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:06.879 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_06-239647311‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:06.971 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_06-2175076838‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:10.084 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_10-1499794637‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:10.086 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_10-514416876‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:10.088 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_10-688627048‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-16 18:45:10.090 python[32338:182004] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-32338-2026-03-16_18_45_10-256264277‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.

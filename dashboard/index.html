@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATP Tactical Dashboard</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel">
+            <div class="sidebar-header">
+                <i class="fas fa-tennis-ball fa-2x gradient-text"></i>
+                <h2>ATP Tactical</h2>
+            </div>
+            
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="playerSearch" placeholder="Search Top 50..." autocomplete="off">
+            </div>
+
+            <div class="player-list-container">
+                <ul id="playerList" class="player-list">
+                    <!-- Populated by JS -->
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header glass-panel">
+                <div class="header-left">
+                    <h1 id="playerName">Select a Player</h1>
+                    <div class="badges">
+                        <span id="playerArchetype" class="badge archetype-badge" style="display:none;"></span>
+                        <span id="playerRank" class="badge rank-badge" style="display:none;"></span>
+                    </div>
+                </div>
+                <div class="header-stats">
+                    <div class="stat-pill">
+                        <span class="stat-label">Win %</span>
+                        <span id="winPct" class="stat-value">--</span>
+                    </div>
+                    <div class="stat-pill">
+                        <span class="stat-label">Dominance</span>
+                        <span id="dominanceRatio" class="stat-value">--</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Grid -->
+            <div class="dashboard-grid">
+                
+                <!-- Strengths & Weaknesses (Glass Card) -->
+                <section class="card glass-panel section-sw">
+                    <h3><i class="fas fa-bolt"></i> Strengths vs Tour Avg</h3>
+                    <ul id="strengthsList" class="sw-list strengths">
+                        <!-- Populated by JS -->
+                    </ul>
+                    
+                    <h3 class="mt-4"><i class="fas fa-exclamation-triangle"></i> Areas to Improve</h3>
+                    <ul id="weaknessesList" class="sw-list weaknesses">
+                        <!-- Populated by JS -->
+                    </ul>
+                </section>
+
+                <!-- Surface Performance -->
+                <section class="card glass-panel section-surface">
+                    <h3><i class="fas fa-layer-group"></i> Surface Performance</h3>
+                    <div class="chart-container">
+                        <canvas id="surfaceChart"></canvas>
+                    </div>
+                </section>
+
+                <!-- Serve & Return Radar -->
+                <section class="card glass-panel section-radar">
+                    <h3><i class="fas fa-crosshairs"></i> Core Attributes</h3>
+                    <div class="chart-container">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                </section>
+
+                <!-- Tactical / MCP Data -->
+                <section class="card glass-panel section-tactics span-2">
+                    <h3><i class="fas fa-chess-knight"></i> Point-by-Point Tactics (Grand Slams)</h3>
+                    <div class="tactics-grid">
+                        <div class="tactic-box">
+                            <h4>Clutch Serve (Deuce)</h4>
+                            <div class="progress-circle" id="deuceWinPct">--</div>
+                            <p class="tour-avg">Tour Avg: 63.3%</p>
+                        </div>
+                        <div class="tactic-box">
+                            <h4>Rally Win % Decay</h4>
+                            <div class="mini-chart">
+                                <canvas id="rallyChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="tactic-box">
+                            <h4>Deuce Crt Serve Directions</h4>
+                            <div class="serve-split">
+                                <div class="split-col">
+                                    <span class="lbl">Wide</span>
+                                    <span class="val" id="serveDeuceWide">--</span>
+                                </div>
+                                <div class="split-col">
+                                    <span class="lbl">T</span>
+                                    <span class="val" id="serveDeuceT">--</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Top Shots & Combos -->
+                <section class="card glass-panel section-combos span-3">
+                    <h3><i class="fas fa-fire" style="color: #f85149;"></i> Signature Shots & Tactical Combos</h3>
+                    <div class="combos-grid">
+                        <div class="combo-col">
+                            <h4><i class="fas fa-bullseye"></i> Most Effective Shots (Win %)</h4>
+                            <ul id="topShotsList" class="combo-list">
+                                <!-- Populated by JS -->
+                            </ul>
+                        </div>
+                        <div class="combo-col">
+                            <h4><i class="fas fa-link"></i> Best Serve + 1 Patterns</h4>
+                            <ul id="topCombosList" class="combo-list">
+                                <!-- Populated by JS -->
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Deep Learning Insights -->
+                <section class="card glass-panel section-dl span-3">
+                    <h3><i class="fas fa-brain"></i> Deep Learning Scouting Engine</h3>
+                    <div class="dl-container">
+                        <div class="dl-metric">
+                            <i class="fas fa-chart-line dl-icon"></i>
+                            <div class="dl-info">
+                                <h4>Momentum LSTM Accuracy</h4>
+                                <span class="dl-val" id="dlLstm">62.1%</span>
+                            </div>
+                        </div>
+                        <div class="dl-metric">
+                            <i class="fas fa-project-diagram dl-icon"></i>
+                            <div class="dl-info">
+                                <h4>Rally Transformer</h4>
+                                <span class="dl-val" id="dlTransformer">53.9%</span>
+                            </div>
+                        </div>
+                        <div class="dl-metric">
+                            <i class="fas fa-shield-alt dl-icon"></i>
+                            <div class="dl-info">
+                                <h4>Tactical Autoencoder</h4>
+                                <span class="dl-val">500 Anomalies</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="dl-explanation">
+                        <strong>AI Insight:</strong> This player's shot sequence data was run through PyTorch models. 
+                        The Autoencoder flags points where the player deviates significantly from the Tour's winning tactical baseline.
+                    </p>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

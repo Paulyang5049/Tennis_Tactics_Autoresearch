@@ -1,0 +1,6286 @@
+[
+  {
+    "player_id": 104925,
+    "player_name": "Novak Djokovic",
+    "hand": "R",
+    "height": 188,
+    "ioc": "SRB",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 1.715,
+    "pca_y": -4.288,
+    "career_stats": {
+      "total_matches": 1294,
+      "wins": 1088,
+      "win_pct": 0.8408,
+      "best_rank_points": 16950
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6498,
+      "first_serve_win_pct": 0.7508,
+      "second_serve_win_pct": 0.5693,
+      "ace_rate": 0.0765,
+      "df_rate": 0.0292,
+      "bp_save_pct": 0.6306
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.687,
+      "return_pts_won_pct": 0.4298,
+      "dominance_ratio": 1.6561
+    },
+    "strengths": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+7.2%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+6.9%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+6.5%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve %",
+        "diff": "3.9%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.9%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "0.5%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 808,
+        "wins": 688,
+        "win_pct": 0.8515
+      },
+      "clay": {
+        "matches": 338,
+        "wins": 275,
+        "win_pct": 0.8136
+      },
+      "grass": {
+        "matches": 139,
+        "wins": 120,
+        "win_pct": 0.8633
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6682542969558914,
+      "rally_win_pcts": {
+        "1-3": 0.532180858338576,
+        "4-6": 0.5461589846359386,
+        "7-9": 0.5309959966031784,
+        "10": 0.5383356963681972
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.46001804666351565,
+        "deuce_t_pct": 0.35160916083014654,
+        "ad_wide_pct": 0.4253434391283752,
+        "ad_t_pct": 0.40033159639981053
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.6213720316622692,
+        "shots": 2274,
+        "winner_pct": 0.1358839050131926
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.6051039697542533,
+        "shots": 15870,
+        "winner_pct": 0.08909892879647133
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5854056997640225,
+        "shots": 27545,
+        "winner_pct": 0.07115628970775095
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7038834951456311,
+        "pts_played": 412
+      },
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.6822429906542056,
+        "pts_played": 107
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.640279114533205,
+        "pts_played": 4156
+      }
+    ]
+  },
+  {
+    "player_id": 104745,
+    "player_name": "Rafael Nadal",
+    "hand": "L",
+    "height": 185,
+    "ioc": "ESP",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 1.281,
+    "pca_y": -5.407,
+    "career_stats": {
+      "total_matches": 1211,
+      "wins": 1014,
+      "win_pct": 0.8373,
+      "best_rank_points": 15390
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6762,
+      "first_serve_win_pct": 0.734,
+      "second_serve_win_pct": 0.5816,
+      "ace_rate": 0.0455,
+      "df_rate": 0.0226,
+      "bp_save_pct": 0.642
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6844,
+      "return_pts_won_pct": 0.4352,
+      "dominance_ratio": 1.6441
+    },
+    "strengths": [
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+8.1%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+7.8%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+6.6%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "3.2%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "1.5%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-2.6%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 634,
+        "wins": 497,
+        "win_pct": 0.7839
+      },
+      "clay": {
+        "matches": 484,
+        "wins": 443,
+        "win_pct": 0.9153
+      },
+      "grass": {
+        "matches": 93,
+        "wins": 74,
+        "win_pct": 0.7957
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6332794830371568,
+      "rally_win_pcts": {
+        "1-3": 0.5162016981459019,
+        "4-6": 0.5558719826417141,
+        "7-9": 0.5468475257472997,
+        "10": 0.5608672936259144
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.2336369770580297,
+        "deuce_t_pct": 0.49319613135402607,
+        "ad_wide_pct": 0.5324096981692231,
+        "ad_t_pct": 0.2003958436417615
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.6346009819422485,
+        "shots": 12017,
+        "winner_pct": 0.14179911791628527
+      },
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.6223091976516634,
+        "shots": 3577,
+        "winner_pct": 0.08051439753983786
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.6085545722713864,
+        "shots": 6780,
+        "winner_pct": 0.1864306784660767
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7040816326530612,
+        "pts_played": 196
+      },
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.696969696969697,
+        "pts_played": 66
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6463801557542544,
+        "pts_played": 3467
+      }
+    ]
+  },
+  {
+    "player_id": 104918,
+    "player_name": "Andy Murray",
+    "hand": "R",
+    "height": 190,
+    "ioc": "GBR",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 0.805,
+    "pca_y": -2.067,
+    "career_stats": {
+      "total_matches": 969,
+      "wins": 710,
+      "win_pct": 0.7327,
+      "best_rank_points": 12560
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5827,
+      "first_serve_win_pct": 0.7491,
+      "second_serve_win_pct": 0.5254,
+      "ace_rate": 0.0878,
+      "df_rate": 0.0326,
+      "bp_save_pct": 0.6094
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6556,
+      "return_pts_won_pct": 0.4168,
+      "dominance_ratio": 1.6373
+    },
+    "strengths": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+5.9%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+4.7%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+3.4%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Ace Rate",
+        "diff": "1.6%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.5%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-2.8%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 667,
+        "wins": 491,
+        "win_pct": 0.7361
+      },
+      "clay": {
+        "matches": 150,
+        "wins": 100,
+        "win_pct": 0.6667
+      },
+      "grass": {
+        "matches": 141,
+        "wins": 111,
+        "win_pct": 0.7872
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6450715421303657,
+      "rally_win_pcts": {
+        "1-3": 0.5218032076289554,
+        "4-6": 0.5054722334819619,
+        "7-9": 0.488022736500203,
+        "10": 0.48647573587907716
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.38642320461296525,
+        "deuce_t_pct": 0.38633583784728287,
+        "ad_wide_pct": 0.4254461715601612,
+        "ad_t_pct": 0.36509307234695837
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5663157894736842,
+        "shots": 7125,
+        "winner_pct": 0.0672280701754386
+      },
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5475543478260869,
+        "shots": 736,
+        "winner_pct": 0.13994565217391305
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5323896872968874,
+        "shots": 13847,
+        "winner_pct": 0.060807395103632554
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.6880733944954128,
+        "pts_played": 109
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.5915338097855964,
+        "pts_played": 1819
+      },
+      {
+        "serve_plus_1": "Body Serve + Forehand",
+        "win_pct": 0.5914221218961625,
+        "pts_played": 443
+      }
+    ]
+  },
+  {
+    "player_id": 103819,
+    "player_name": "Roger Federer",
+    "hand": "R",
+    "height": 185,
+    "ioc": "SUI",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 4.084,
+    "pca_y": -4.542,
+    "career_stats": {
+      "total_matches": 1070,
+      "wins": 913,
+      "win_pct": 0.8533,
+      "best_rank_points": 12165
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6313,
+      "first_serve_win_pct": 0.7894,
+      "second_serve_win_pct": 0.5939,
+      "ace_rate": 0.1067,
+      "df_rate": 0.0195,
+      "bp_save_pct": 0.6694
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.7168,
+      "return_pts_won_pct": 0.4075,
+      "dominance_ratio": 1.8196
+    },
+    "strengths": [
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+9.4%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+9.4%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+9.3%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Ace Rate",
+        "diff": "3.5%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "2.0%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "1.8%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 686,
+        "wins": 589,
+        "win_pct": 0.8586
+      },
+      "clay": {
+        "matches": 206,
+        "wins": 165,
+        "win_pct": 0.801
+      },
+      "grass": {
+        "matches": 168,
+        "wins": 150,
+        "win_pct": 0.8929
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6867745339430179,
+      "rally_win_pcts": {
+        "1-3": 0.5372172296250387,
+        "4-6": 0.5492203245995545,
+        "7-9": 0.50399695470118,
+        "10": 0.5389641434262948
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.41491021342981377,
+        "deuce_t_pct": 0.41325057257609454,
+        "ad_wide_pct": 0.5232434804871804,
+        "ad_t_pct": 0.3397095936505614
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.6097399470262461,
+        "shots": 16612,
+        "winner_pct": 0.14320972790753672
+      },
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.597261567516525,
+        "shots": 4236,
+        "winner_pct": 0.14801699716713881
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5783204052556593,
+        "shots": 25268,
+        "winner_pct": 0.10626088333069494
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7089678510998308,
+        "pts_played": 591
+      },
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.6997840172786177,
+        "pts_played": 463
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6511131442512961,
+        "pts_played": 3279
+      }
+    ]
+  },
+  {
+    "player_id": 206173,
+    "player_name": "Jannik Sinner",
+    "hand": "R",
+    "height": 191,
+    "ioc": "ITA",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 2.116,
+    "pca_y": -3.232,
+    "career_stats": {
+      "total_matches": 339,
+      "wins": 261,
+      "win_pct": 0.7699,
+      "best_rank_points": 11830
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6014,
+      "first_serve_win_pct": 0.7567,
+      "second_serve_win_pct": 0.5579,
+      "ace_rate": 0.0775,
+      "df_rate": 0.026,
+      "bp_save_pct": 0.6539
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6771,
+      "return_pts_won_pct": 0.4062,
+      "dominance_ratio": 1.7238
+    },
+    "strengths": [
+      {
+        "metric": "Break Point Save %",
+        "diff": "+7.8%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+5.7%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+5.5%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Double Fault Rate",
+        "diff": "1.2%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "0.6%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-1.0%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 233,
+        "wins": 186,
+        "win_pct": 0.7983
+      },
+      "clay": {
+        "matches": 76,
+        "wins": 54,
+        "win_pct": 0.7105
+      },
+      "grass": {
+        "matches": 30,
+        "wins": 21,
+        "win_pct": 0.7
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6693472090823084,
+      "rally_win_pcts": {
+        "1-3": 0.5452513966480447,
+        "4-6": 0.5361748633879782,
+        "7-9": 0.5253164556962026,
+        "10": 0.5542986425339367
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.35613453339649453,
+        "deuce_t_pct": 0.3546186641402179,
+        "ad_wide_pct": 0.4774011299435028,
+        "ad_t_pct": 0.261874869219502
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.6433941997851772,
+        "shots": 931,
+        "winner_pct": 0.19656283566058003
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.6190103351080488,
+        "shots": 6386,
+        "winner_pct": 0.11321641089884121
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.581957773512476,
+        "shots": 2605,
+        "winner_pct": 0.13051823416506717
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.6842105263157895,
+        "pts_played": 38
+      },
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.6830985915492958,
+        "pts_played": 142
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6462673611111112,
+        "pts_played": 2304
+      }
+    ]
+  },
+  {
+    "player_id": 106421,
+    "player_name": "Daniil Medvedev",
+    "hand": "R",
+    "height": 198,
+    "ioc": "RUS",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 1.669,
+    "pca_y": -1.201,
+    "career_stats": {
+      "total_matches": 528,
+      "wins": 373,
+      "win_pct": 0.7064,
+      "best_rank_points": 10620
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6175,
+      "first_serve_win_pct": 0.7572,
+      "second_serve_win_pct": 0.5216,
+      "ace_rate": 0.1071,
+      "df_rate": 0.0476,
+      "bp_save_pct": 0.6117
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6676,
+      "return_pts_won_pct": 0.4009,
+      "dominance_ratio": 1.7618
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+5.5%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+4.5%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+4.3%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "2.1%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "0.6%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-1.0%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 390,
+        "wins": 288,
+        "win_pct": 0.7385
+      },
+      "clay": {
+        "matches": 70,
+        "wins": 39,
+        "win_pct": 0.5571
+      },
+      "grass": {
+        "matches": 68,
+        "wins": 46,
+        "win_pct": 0.6765
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6658301965704726,
+      "rally_win_pcts": {
+        "1-3": 0.5294117647058824,
+        "4-6": 0.5318877551020408,
+        "7-9": 0.5269509251810137,
+        "10": 0.545
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.496,
+        "deuce_t_pct": 0.36018181818181816,
+        "ad_wide_pct": 0.46248633608267914,
+        "ad_t_pct": 0.39203020967902213
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.61875,
+        "shots": 480,
+        "winner_pct": 0.13333333333333333
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5819144911085887,
+        "shots": 5286,
+        "winner_pct": 0.07642830117290957
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5691686300908785,
+        "shots": 11884,
+        "winner_pct": 0.05730393806799058
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.75,
+        "pts_played": 36
+      },
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.6696428571428571,
+        "pts_played": 112
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.62472647702407,
+        "pts_played": 1828
+      }
+    ]
+  },
+  {
+    "player_id": 207989,
+    "player_name": "Carlos Alcaraz",
+    "hand": "R",
+    "height": 183,
+    "ioc": "ESP",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 0.856,
+    "pca_y": -4.171,
+    "career_stats": {
+      "total_matches": 261,
+      "wins": 207,
+      "win_pct": 0.7931,
+      "best_rank_points": 9815
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6541,
+      "first_serve_win_pct": 0.7283,
+      "second_serve_win_pct": 0.5651,
+      "ace_rate": 0.0529,
+      "df_rate": 0.0279,
+      "bp_save_pct": 0.6187
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6719,
+      "return_pts_won_pct": 0.4223,
+      "dominance_ratio": 1.6451
+    },
+    "strengths": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+6.5%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+6.5%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+4.9%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "2.6%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "1.0%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-1.9%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 136,
+        "wins": 102,
+        "win_pct": 0.75
+      },
+      "clay": {
+        "matches": 98,
+        "wins": 81,
+        "win_pct": 0.8265
+      },
+      "grass": {
+        "matches": 27,
+        "wins": 24,
+        "win_pct": 0.8889
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6695753344968005,
+      "rally_win_pcts": {
+        "1-3": 0.5259394745593615,
+        "4-6": 0.5639278557114229,
+        "7-9": 0.539440203562341,
+        "10": 0.5517661388550548
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.38675115207373273,
+        "deuce_t_pct": 0.3686635944700461,
+        "ad_wide_pct": 0.5309100217586075,
+        "ad_t_pct": 0.26468706002815817
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.6224758560140474,
+        "shots": 1139,
+        "winner_pct": 0.18700614574187885
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.6075078616352201,
+        "shots": 5088,
+        "winner_pct": 0.12008647798742138
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5902603905858789,
+        "shots": 7988,
+        "winner_pct": 0.10090135202804207
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7558441558441559,
+        "pts_played": 385
+      },
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.717948717948718,
+        "pts_played": 117
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.61644623346751,
+        "pts_played": 1739
+      }
+    ]
+  },
+  {
+    "player_id": 106233,
+    "player_name": "Dominic Thiem",
+    "hand": "R",
+    "height": 185,
+    "ioc": "AUT",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 1.468,
+    "pca_y": -1.228,
+    "career_stats": {
+      "total_matches": 551,
+      "wins": 343,
+      "win_pct": 0.6225,
+      "best_rank_points": 9125
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6037,
+      "first_serve_win_pct": 0.7392,
+      "second_serve_win_pct": 0.537,
+      "ace_rate": 0.0736,
+      "df_rate": 0.0355,
+      "bp_save_pct": 0.5977
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6581,
+      "return_pts_won_pct": 0.3727,
+      "dominance_ratio": 1.8835
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+3.7%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+3.6%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+3.6%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.2%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "0.2%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-0.7%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 281,
+        "wins": 164,
+        "win_pct": 0.5836
+      },
+      "clay": {
+        "matches": 238,
+        "wins": 165,
+        "win_pct": 0.6933
+      },
+      "grass": {
+        "matches": 32,
+        "wins": 14,
+        "win_pct": 0.4375
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6366421568627451,
+      "rally_win_pcts": {
+        "1-3": 0.505840762373194,
+        "4-6": 0.506434205064342,
+        "7-9": 0.5160744500846024,
+        "10": 0.5308988764044944
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.41730544367935557,
+        "deuce_t_pct": 0.41925425490450824,
+        "ad_wide_pct": 0.5300398633257403,
+        "ad_t_pct": 0.2996867881548975
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5972762645914397,
+        "shots": 1028,
+        "winner_pct": 0.17412451361867703
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5787740164684355,
+        "shots": 5465,
+        "winner_pct": 0.10594693504117109
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5710353866317169,
+        "shots": 7630,
+        "winner_pct": 0.08597640891218873
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.711864406779661,
+        "pts_played": 177
+      },
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.6666666666666666,
+        "pts_played": 36
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6143861546782045,
+        "pts_played": 1849
+      }
+    ]
+  },
+  {
+    "player_id": 126774,
+    "player_name": "Stefanos Tsitsipas",
+    "hand": "R",
+    "height": 193,
+    "ioc": "GRE",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 3.108,
+    "pca_y": -1.916,
+    "career_stats": {
+      "total_matches": 495,
+      "wins": 334,
+      "win_pct": 0.6747,
+      "best_rank_points": 8350
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6232,
+      "first_serve_win_pct": 0.7679,
+      "second_serve_win_pct": 0.5538,
+      "ace_rate": 0.0901,
+      "df_rate": 0.0285,
+      "bp_save_pct": 0.6208
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6876,
+      "return_pts_won_pct": 0.3643,
+      "dominance_ratio": 2.012
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+6.6%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+6.5%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+5.3%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve %",
+        "diff": "1.2%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.9%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "0.7%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 306,
+        "wins": 198,
+        "win_pct": 0.6471
+      },
+      "clay": {
+        "matches": 150,
+        "wins": 114,
+        "win_pct": 0.76
+      },
+      "grass": {
+        "matches": 39,
+        "wins": 22,
+        "win_pct": 0.5641
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.657213316892725,
+      "rally_win_pcts": {
+        "1-3": 0.5178863523220255,
+        "4-6": 0.502845220030349,
+        "7-9": 0.48184414524683805,
+        "10": 0.5092250922509225
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.39232749111410714,
+        "deuce_t_pct": 0.40139723005270256,
+        "ad_wide_pct": 0.42750778394476785,
+        "ad_t_pct": 0.3609042913225938
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.610757254069356,
+        "shots": 1413,
+        "winner_pct": 0.12526539278131635
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.6040629356701852,
+        "shots": 5021,
+        "winner_pct": 0.11989643497311292
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5636413191605342,
+        "shots": 7338,
+        "winner_pct": 0.08680839465794495
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.7457627118644068,
+        "pts_played": 118
+      },
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7204301075268817,
+        "pts_played": 186
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6304347826086957,
+        "pts_played": 1840
+      }
+    ]
+  },
+  {
+    "player_id": 100644,
+    "player_name": "Alexander Zverev",
+    "hand": "R",
+    "height": 198,
+    "ioc": "GER",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 1.813,
+    "pca_y": -1.337,
+    "career_stats": {
+      "total_matches": 645,
+      "wins": 449,
+      "win_pct": 0.6961,
+      "best_rank_points": 8240
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6665,
+      "first_serve_win_pct": 0.7511,
+      "second_serve_win_pct": 0.5165,
+      "ace_rate": 0.1105,
+      "df_rate": 0.0457,
+      "bp_save_pct": 0.6065
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6725,
+      "return_pts_won_pct": 0.3859,
+      "dominance_ratio": 1.817
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve %",
+        "diff": "+5.5%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+5.0%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+4.9%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "2.8%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "1.6%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-0.8%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 382,
+        "wins": 260,
+        "win_pct": 0.6806
+      },
+      "clay": {
+        "matches": 204,
+        "wins": 150,
+        "win_pct": 0.7353
+      },
+      "grass": {
+        "matches": 59,
+        "wins": 39,
+        "win_pct": 0.661
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6536423841059603,
+      "rally_win_pcts": {
+        "1-3": 0.5274532710280374,
+        "4-6": 0.49369641956631366,
+        "7-9": 0.4703296703296703,
+        "10": 0.4825174825174825
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.3984744871120463,
+        "deuce_t_pct": 0.45647027880063124,
+        "ad_wide_pct": 0.40052053209947946,
+        "ad_t_pct": 0.4242336610757663
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5578231292517006,
+        "shots": 441,
+        "winner_pct": 0.1655328798185941
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5457324840764332,
+        "shots": 3925,
+        "winner_pct": 0.0845859872611465
+      },
+      {
+        "shot_name": "Backhand Line",
+        "win_pct": 0.5402242808386153,
+        "shots": 2051,
+        "winner_pct": 0.15943442223305704
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7761194029850746,
+        "pts_played": 134
+      },
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.7560975609756098,
+        "pts_played": 123
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6097750193948798,
+        "pts_played": 1289
+      }
+    ]
+  },
+  {
+    "player_id": 103970,
+    "player_name": "David Ferrer",
+    "hand": "R",
+    "height": 175,
+    "ioc": "ESP",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": -0.83,
+    "pca_y": -3.146,
+    "career_stats": {
+      "total_matches": 955,
+      "wins": 647,
+      "win_pct": 0.6775,
+      "best_rank_points": 7220
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.631,
+      "first_serve_win_pct": 0.6982,
+      "second_serve_win_pct": 0.5375,
+      "ace_rate": 0.0366,
+      "df_rate": 0.033,
+      "bp_save_pct": 0.5958
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6386,
+      "return_pts_won_pct": 0.4255,
+      "dominance_ratio": 1.5646
+    },
+    "strengths": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+6.8%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+3.7%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+2.0%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.5%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "-0.4%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-3.5%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 504,
+        "wins": 329,
+        "win_pct": 0.6528
+      },
+      "clay": {
+        "matches": 379,
+        "wins": 273,
+        "win_pct": 0.7203
+      },
+      "grass": {
+        "matches": 63,
+        "wins": 41,
+        "win_pct": 0.6508
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.5975,
+      "rally_win_pcts": {
+        "1-3": 0.4664891256102974,
+        "4-6": 0.4787493893502687,
+        "7-9": 0.5132042253521126,
+        "10": 0.47732513451191394
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.35836287463744765,
+        "deuce_t_pct": 0.3058330647760232,
+        "ad_wide_pct": 0.3587033121916843,
+        "ad_t_pct": 0.3470754052149401
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5806045340050378,
+        "shots": 794,
+        "winner_pct": 0.08564231738035265
+      },
+      {
+        "shot_name": "Backhand Inside-Out",
+        "win_pct": 0.5519125683060109,
+        "shots": 183,
+        "winner_pct": 0.06557377049180328
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5467263570229435,
+        "shots": 3574,
+        "winner_pct": 0.05623950755456072
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5552447552447553,
+        "pts_played": 715
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.5506607929515418,
+        "pts_played": 681
+      },
+      {
+        "serve_plus_1": "Wide Serve + Backhand",
+        "win_pct": 0.5454545454545454,
+        "pts_played": 165
+      }
+    ]
+  },
+  {
+    "player_id": 104527,
+    "player_name": "Stan Wawrinka",
+    "hand": "R",
+    "height": 183,
+    "ioc": "SUI",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 2.031,
+    "pca_y": -1.443,
+    "career_stats": {
+      "total_matches": 889,
+      "wins": 551,
+      "win_pct": 0.6198,
+      "best_rank_points": 6865
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5777,
+      "first_serve_win_pct": 0.7448,
+      "second_serve_win_pct": 0.5427,
+      "ace_rate": 0.0891,
+      "df_rate": 0.0301,
+      "bp_save_pct": 0.6301
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6586,
+      "return_pts_won_pct": 0.3727,
+      "dominance_ratio": 1.8456
+    },
+    "strengths": [
+      {
+        "metric": "Break Point Save %",
+        "diff": "+5.4%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+4.3%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+4.2%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "1.5%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.8%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-3.3%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 520,
+        "wins": 323,
+        "win_pct": 0.6212
+      },
+      "clay": {
+        "matches": 291,
+        "wins": 189,
+        "win_pct": 0.6495
+      },
+      "grass": {
+        "matches": 67,
+        "wins": 33,
+        "win_pct": 0.4925
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6481481481481481,
+      "rally_win_pcts": {
+        "1-3": 0.5038520801232665,
+        "4-6": 0.48787061994609165,
+        "7-9": 0.5047549378200439,
+        "10": 0.506993006993007
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.38800328677074775,
+        "deuce_t_pct": 0.419063270336894,
+        "ad_wide_pct": 0.5451589595375722,
+        "ad_t_pct": 0.3345375722543353
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.6007905138339921,
+        "shots": 506,
+        "winner_pct": 0.2075098814229249
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5607280364018201,
+        "shots": 2857,
+        "winner_pct": 0.14525726286314317
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5328227571115973,
+        "shots": 6398,
+        "winner_pct": 0.0840887777430447
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.6875,
+        "pts_played": 112
+      },
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.6865671641791045,
+        "pts_played": 67
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5980487804878049,
+        "pts_played": 1025
+      }
+    ]
+  },
+  {
+    "player_id": 105223,
+    "player_name": "Juan Martin del Potro",
+    "hand": "R",
+    "height": 198,
+    "ioc": "ARG",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 2.043,
+    "pca_y": -2.425,
+    "career_stats": {
+      "total_matches": 594,
+      "wins": 425,
+      "win_pct": 0.7155,
+      "best_rank_points": 6580
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.64,
+      "first_serve_win_pct": 0.752,
+      "second_serve_win_pct": 0.5399,
+      "ace_rate": 0.1016,
+      "df_rate": 0.0299,
+      "bp_save_pct": 0.618
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6743,
+      "return_pts_won_pct": 0.3912,
+      "dominance_ratio": 1.8067
+    },
+    "strengths": [
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+5.2%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+5.0%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+4.2%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Ace Rate",
+        "diff": "3.0%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "2.9%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.8%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 424,
+        "wins": 307,
+        "win_pct": 0.7241
+      },
+      "clay": {
+        "matches": 111,
+        "wins": 77,
+        "win_pct": 0.6937
+      },
+      "grass": {
+        "matches": 56,
+        "wins": 39,
+        "win_pct": 0.6964
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": false,
+      "deuce_win_pct": null,
+      "rally_win_pcts": {
+        "1-3": null,
+        "4-6": null,
+        "7-9": null,
+        "10": null
+      },
+      "serve_directions": {}
+    },
+    "top_shots": [],
+    "top_combos": []
+  },
+  {
+    "player_id": 126094,
+    "player_name": "Andrey Rublev",
+    "hand": "R",
+    "height": 188,
+    "ioc": "RUS",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 1.527,
+    "pca_y": -1.417,
+    "career_stats": {
+      "total_matches": 509,
+      "wins": 330,
+      "win_pct": 0.6483,
+      "best_rank_points": 6400
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6085,
+      "first_serve_win_pct": 0.7577,
+      "second_serve_win_pct": 0.5154,
+      "ace_rate": 0.0934,
+      "df_rate": 0.0324,
+      "bp_save_pct": 0.6129
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6621,
+      "return_pts_won_pct": 0.387,
+      "dominance_ratio": 1.7898
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+5.6%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+4.0%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+3.7%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "1.5%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.5%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-0.3%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 362,
+        "wins": 233,
+        "win_pct": 0.6436
+      },
+      "clay": {
+        "matches": 118,
+        "wins": 78,
+        "win_pct": 0.661
+      },
+      "grass": {
+        "matches": 29,
+        "wins": 19,
+        "win_pct": 0.6552
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.651424287856072,
+      "rally_win_pcts": {
+        "1-3": 0.5016209476309227,
+        "4-6": 0.5366522932183457,
+        "7-9": 0.5634987384356602,
+        "10": 0.5182872435325602
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.35026897788404066,
+        "deuce_t_pct": 0.500448296473401,
+        "ad_wide_pct": 0.533311345646438,
+        "ad_t_pct": 0.3233839050131926
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.6378378378378379,
+        "shots": 740,
+        "winner_pct": 0.16891891891891891
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.6216730038022814,
+        "shots": 5260,
+        "winner_pct": 0.12243346007604562
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5971314451706609,
+        "shots": 5508,
+        "winner_pct": 0.119281045751634
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7551020408163265,
+        "pts_played": 49
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6417218543046358,
+        "pts_played": 1510
+      },
+      {
+        "serve_plus_1": "Body Serve + Backhand",
+        "win_pct": 0.640625,
+        "pts_played": 64
+      }
+    ]
+  },
+  {
+    "player_id": 105453,
+    "player_name": "Kei Nishikori",
+    "hand": "R",
+    "height": 178,
+    "ioc": "JPN",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": -0.215,
+    "pca_y": -2.007,
+    "career_stats": {
+      "total_matches": 638,
+      "wins": 421,
+      "win_pct": 0.6599,
+      "best_rank_points": 6205
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6142,
+      "first_serve_win_pct": 0.7047,
+      "second_serve_win_pct": 0.5345,
+      "ace_rate": 0.0421,
+      "df_rate": 0.0334,
+      "bp_save_pct": 0.5878
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6387,
+      "return_pts_won_pct": 0.3923,
+      "dominance_ratio": 1.7082
+    },
+    "strengths": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+3.5%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+3.4%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+1.6%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve %",
+        "diff": "0.3%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "0.3%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-3.0%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 420,
+        "wins": 278,
+        "win_pct": 0.6619
+      },
+      "clay": {
+        "matches": 151,
+        "wins": 102,
+        "win_pct": 0.6755
+      },
+      "grass": {
+        "matches": 67,
+        "wins": 41,
+        "win_pct": 0.6119
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6326241134751773,
+      "rally_win_pcts": {
+        "1-3": 0.46206896551724136,
+        "4-6": 0.4778625954198473,
+        "7-9": 0.5935672514619883,
+        "10": 0.5555555555555556
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.35309361839974085,
+        "deuce_t_pct": 0.4003887269193392,
+        "ad_wide_pct": 0.46970776906628653,
+        "ad_t_pct": 0.2851033499643621
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.616504854368932,
+        "shots": 206,
+        "winner_pct": 0.11165048543689321
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.6115384615384616,
+        "shots": 1820,
+        "winner_pct": 0.08406593406593407
+      },
+      {
+        "shot_name": "Backhand Inside-Out",
+        "win_pct": 0.5989159891598916,
+        "shots": 369,
+        "winner_pct": 0.17344173441734417
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.6962025316455697,
+        "pts_played": 79
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6020408163265306,
+        "pts_played": 588
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5878661087866108,
+        "pts_played": 478
+      }
+    ]
+  },
+  {
+    "player_id": 104417,
+    "player_name": "Robin Soderling",
+    "hand": "R",
+    "height": 193,
+    "ioc": "SWE",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 2.832,
+    "pca_y": -1.539,
+    "career_stats": {
+      "total_matches": 374,
+      "wins": 248,
+      "win_pct": 0.6631,
+      "best_rank_points": 6050
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6103,
+      "first_serve_win_pct": 0.7702,
+      "second_serve_win_pct": 0.5325,
+      "ace_rate": 0.1201,
+      "df_rate": 0.0385,
+      "bp_save_pct": 0.6457
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6778,
+      "return_pts_won_pct": 0.388,
+      "dominance_ratio": 1.8436
+    },
+    "strengths": [
+      {
+        "metric": "Break Point Save %",
+        "diff": "+7.0%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+6.8%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+5.5%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "3.1%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-0.1%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-0.1%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 211,
+        "wins": 140,
+        "win_pct": 0.6635
+      },
+      "clay": {
+        "matches": 112,
+        "wins": 74,
+        "win_pct": 0.6607
+      },
+      "grass": {
+        "matches": 34,
+        "wins": 21,
+        "win_pct": 0.6176
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6790697674418604,
+      "rally_win_pcts": {
+        "1-3": 0.48393676695563487,
+        "4-6": 0.5234042553191489,
+        "7-9": 0.48464163822525597,
+        "10": 0.4628975265017668
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.42857142857142855,
+        "deuce_t_pct": 0.37124060150375937,
+        "ad_wide_pct": 0.3670490093847758,
+        "ad_t_pct": 0.4556830031282586
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5643564356435643,
+        "shots": 1010,
+        "winner_pct": 0.09108910891089109
+      },
+      {
+        "shot_name": "Backhand Inside-Out",
+        "win_pct": 0.5619834710743802,
+        "shots": 121,
+        "winner_pct": 0.049586776859504134
+      },
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5365853658536586,
+        "shots": 123,
+        "winner_pct": 0.11382113821138211
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.625,
+        "pts_played": 128
+      },
+      {
+        "serve_plus_1": "Wide Serve + Backhand",
+        "win_pct": 0.5161290322580645,
+        "pts_played": 31
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5,
+        "pts_played": 132
+      }
+    ]
+  },
+  {
+    "player_id": 134770,
+    "player_name": "Casper Ruud",
+    "hand": "R",
+    "height": 183,
+    "ioc": "NOR",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 1.374,
+    "pca_y": -2.428,
+    "career_stats": {
+      "total_matches": 386,
+      "wins": 248,
+      "win_pct": 0.6425,
+      "best_rank_points": 5850
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6515,
+      "first_serve_win_pct": 0.7276,
+      "second_serve_win_pct": 0.5484,
+      "ace_rate": 0.0673,
+      "df_rate": 0.0283,
+      "bp_save_pct": 0.5964
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6647,
+      "return_pts_won_pct": 0.3769,
+      "dominance_ratio": 1.8722
+    },
+    "strengths": [
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+4.8%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+4.2%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "+4.0%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "1.9%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.9%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-0.5%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 179,
+        "wins": 100,
+        "win_pct": 0.5587
+      },
+      "clay": {
+        "matches": 195,
+        "wins": 143,
+        "win_pct": 0.7333
+      },
+      "grass": {
+        "matches": 12,
+        "wins": 5,
+        "win_pct": 0.4167
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6611570247933884,
+      "rally_win_pcts": {
+        "1-3": 0.5228155339805826,
+        "4-6": 0.5168399168399168,
+        "7-9": 0.5197764402407566,
+        "10": 0.4714773281326182
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.4048757907730289,
+        "deuce_t_pct": 0.4237000462891529,
+        "ad_wide_pct": 0.5158002038735984,
+        "ad_t_pct": 0.35847774379884473
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.6063091482649843,
+        "shots": 4755,
+        "winner_pct": 0.11440588853838066
+      },
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5986394557823129,
+        "shots": 1029,
+        "winner_pct": 0.16423712342079688
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.5829109341057205,
+        "shots": 1381,
+        "winner_pct": 0.14337436640115858
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.6557377049180327,
+        "pts_played": 61
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.6306306306306306,
+        "pts_played": 1665
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6236994219653179,
+        "pts_played": 1730
+      }
+    ]
+  },
+  {
+    "player_id": 104053,
+    "player_name": "Andy Roddick",
+    "hand": "R",
+    "height": 188,
+    "ioc": "USA",
+    "archetype": "Big Servers",
+    "cluster": 2,
+    "pca_x": 5.449,
+    "pca_y": -2.8,
+    "career_stats": {
+      "total_matches": 470,
+      "wins": 345,
+      "win_pct": 0.734,
+      "best_rank_points": 5800
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6677,
+      "first_serve_win_pct": 0.7935,
+      "second_serve_win_pct": 0.5718,
+      "ace_rate": 0.1638,
+      "df_rate": 0.0223,
+      "bp_save_pct": 0.6582
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.7193,
+      "return_pts_won_pct": 0.36,
+      "dominance_ratio": 2.094
+    },
+    "strengths": [
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+9.7%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "+9.2%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+9.2%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve %",
+        "diff": "5.7%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "1.5%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "0.3%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 344,
+        "wins": 256,
+        "win_pct": 0.7442
+      },
+      "clay": {
+        "matches": 44,
+        "wins": 25,
+        "win_pct": 0.5682
+      },
+      "grass": {
+        "matches": 69,
+        "wins": 54,
+        "win_pct": 0.7826
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6806002143622722,
+      "rally_win_pcts": {
+        "1-3": 0.5341900495166234,
+        "4-6": 0.47692837465564736,
+        "7-9": 0.44764795144157815,
+        "10": 0.4711760184473482
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.3968524838832006,
+        "deuce_t_pct": 0.4194160030337505,
+        "ad_wide_pct": 0.47335291649181704,
+        "ad_t_pct": 0.39865715484683173
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5444287729196051,
+        "shots": 709,
+        "winner_pct": 0.10578279266572638
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5429171668667467,
+        "shots": 3332,
+        "winner_pct": 0.08823529411764706
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.5183727034120735,
+        "shots": 1524,
+        "winner_pct": 0.09317585301837271
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5323741007194245,
+        "pts_played": 139
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.5272727272727272,
+        "pts_played": 110
+      }
+    ]
+  },
+  {
+    "player_id": 126610,
+    "player_name": "Matteo Berrettini",
+    "hand": "R",
+    "height": 196,
+    "ioc": "ITA",
+    "archetype": "Big Servers",
+    "cluster": 2,
+    "pca_x": 4.241,
+    "pca_y": -1.63,
+    "career_stats": {
+      "total_matches": 281,
+      "wins": 183,
+      "win_pct": 0.6512,
+      "best_rank_points": 5533
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6406,
+      "first_serve_win_pct": 0.7841,
+      "second_serve_win_pct": 0.5344,
+      "ace_rate": 0.1254,
+      "df_rate": 0.024,
+      "bp_save_pct": 0.6622
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6942,
+      "return_pts_won_pct": 0.3492,
+      "dominance_ratio": 2.0867
+    },
+    "strengths": [
+      {
+        "metric": "Break Point Save %",
+        "diff": "+8.6%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+8.2%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+7.2%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve %",
+        "diff": "2.9%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "1.4%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "-0.8%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 145,
+        "wins": 79,
+        "win_pct": 0.5448
+      },
+      "clay": {
+        "matches": 83,
+        "wins": 62,
+        "win_pct": 0.747
+      },
+      "grass": {
+        "matches": 53,
+        "wins": 42,
+        "win_pct": 0.7925
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6779891304347826,
+      "rally_win_pcts": {
+        "1-3": 0.5450104675505931,
+        "4-6": 0.5349264705882353,
+        "7-9": 0.4340659340659341,
+        "10": 0.5190839694656488
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.3738880167451596,
+        "deuce_t_pct": 0.3935112506541078,
+        "ad_wide_pct": 0.4386370199249206,
+        "ad_t_pct": 0.335258446433728
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5701010101010101,
+        "shots": 2475,
+        "winner_pct": 0.14303030303030304
+      },
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5411985018726592,
+        "shots": 534,
+        "winner_pct": 0.1797752808988764
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5316455696202531,
+        "shots": 2607,
+        "winner_pct": 0.10510164940544688
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7931034482758621,
+        "pts_played": 58
+      },
+      {
+        "serve_plus_1": "Body Serve + Forehand",
+        "win_pct": 0.6222222222222222,
+        "pts_played": 180
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6201743462017435,
+        "pts_played": 803
+      }
+    ]
+  },
+  {
+    "player_id": 105683,
+    "player_name": "Milos Raonic",
+    "hand": "R",
+    "height": 196,
+    "ioc": "CAN",
+    "archetype": "Big Servers",
+    "cluster": 2,
+    "pca_x": 6.803,
+    "pca_y": -0.687,
+    "career_stats": {
+      "total_matches": 544,
+      "wins": 368,
+      "win_pct": 0.6765,
+      "best_rank_points": 5450
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6274,
+      "first_serve_win_pct": 0.8206,
+      "second_serve_win_pct": 0.5617,
+      "ace_rate": 0.2039,
+      "df_rate": 0.0423,
+      "bp_save_pct": 0.6746
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.7241,
+      "return_pts_won_pct": 0.3419,
+      "dominance_ratio": 2.2169
+    },
+    "strengths": [
+      {
+        "metric": "Ace Rate",
+        "diff": "+13.2%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+11.9%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+10.2%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve %",
+        "diff": "1.6%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-0.4%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "-1.6%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 368,
+        "wins": 252,
+        "win_pct": 0.6848
+      },
+      "clay": {
+        "matches": 97,
+        "wins": 62,
+        "win_pct": 0.6392
+      },
+      "grass": {
+        "matches": 79,
+        "wins": 54,
+        "win_pct": 0.6835
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6534810126582279,
+      "rally_win_pcts": {
+        "1-3": 0.5252270433905146,
+        "4-6": 0.4796747967479675,
+        "7-9": 0.38499184339314846,
+        "10": 0.5072886297376094
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.4521321660547868,
+        "deuce_t_pct": 0.37616492516238353,
+        "ad_wide_pct": 0.5427309996846421,
+        "ad_t_pct": 0.3279722485020498
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5375446960667462,
+        "shots": 2517,
+        "winner_pct": 0.11005164878823996
+      },
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5359223300970873,
+        "shots": 515,
+        "winner_pct": 0.17475728155339806
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5279685966633955,
+        "shots": 2038,
+        "winner_pct": 0.12659470068694798
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Body Serve + Forehand",
+        "win_pct": 0.6621621621621622,
+        "pts_played": 148
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6387900355871886,
+        "pts_played": 562
+      },
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.6385542168674698,
+        "pts_played": 249
+      }
+    ]
+  },
+  {
+    "player_id": 103786,
+    "player_name": "Nikolay Davydenko",
+    "hand": "R",
+    "height": 178,
+    "ioc": "RUS",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": -0.866,
+    "pca_y": -2.958,
+    "career_stats": {
+      "total_matches": 607,
+      "wins": 386,
+      "win_pct": 0.6359,
+      "best_rank_points": 5330
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6739,
+      "first_serve_win_pct": 0.6976,
+      "second_serve_win_pct": 0.5222,
+      "ace_rate": 0.0464,
+      "df_rate": 0.0356,
+      "bp_save_pct": 0.5869
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6396,
+      "return_pts_won_pct": 0.4199,
+      "dominance_ratio": 1.601
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve %",
+        "diff": "+6.3%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+6.2%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+2.2%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.2%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "-0.4%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-2.5%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 357,
+        "wins": 225,
+        "win_pct": 0.6303
+      },
+      "clay": {
+        "matches": 202,
+        "wins": 132,
+        "win_pct": 0.6535
+      },
+      "grass": {
+        "matches": 23,
+        "wins": 10,
+        "win_pct": 0.4348
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6521739130434783,
+      "rally_win_pcts": {
+        "1-3": 0.5035161744022504,
+        "4-6": 0.5243722304283605,
+        "7-9": 0.5683060109289617,
+        "10": 0.5295454545454545
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.3538575667655786,
+        "deuce_t_pct": 0.4310089020771513,
+        "ad_wide_pct": 0.5209508460918614,
+        "ad_t_pct": 0.314262691377921
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5736677115987461,
+        "shots": 1595,
+        "winner_pct": 0.09655172413793103
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5701333333333334,
+        "shots": 3750,
+        "winner_pct": 0.06773333333333334
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.5579710144927537,
+        "shots": 1242,
+        "winner_pct": 0.11594202898550725
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6335078534031413,
+        "pts_played": 191
+      },
+      {
+        "serve_plus_1": "Body Serve + Backhand",
+        "win_pct": 0.5757575757575758,
+        "pts_played": 33
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5683060109289617,
+        "pts_played": 183
+      }
+    ]
+  },
+  {
+    "player_id": 104542,
+    "player_name": "Jo-Wilfried Tsonga",
+    "hand": "R",
+    "height": 188,
+    "ioc": "FRA",
+    "archetype": "Big Servers",
+    "cluster": 2,
+    "pca_x": 3.707,
+    "pca_y": -1.318,
+    "career_stats": {
+      "total_matches": 679,
+      "wins": 449,
+      "win_pct": 0.6613,
+      "best_rank_points": 5230
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6202,
+      "first_serve_win_pct": 0.7797,
+      "second_serve_win_pct": 0.5341,
+      "ace_rate": 0.1254,
+      "df_rate": 0.0302,
+      "bp_save_pct": 0.6474
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6864,
+      "return_pts_won_pct": 0.3596,
+      "dominance_ratio": 2.0061
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+7.8%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+7.2%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+6.4%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve %",
+        "diff": "0.9%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.8%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "0.2%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 460,
+        "wins": 310,
+        "win_pct": 0.6739
+      },
+      "clay": {
+        "matches": 136,
+        "wins": 82,
+        "win_pct": 0.6029
+      },
+      "grass": {
+        "matches": 75,
+        "wins": 51,
+        "win_pct": 0.68
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": false,
+      "deuce_win_pct": null,
+      "rally_win_pcts": {
+        "1-3": null,
+        "4-6": null,
+        "7-9": null,
+        "10": null
+      },
+      "serve_directions": {}
+    },
+    "top_shots": [],
+    "top_combos": []
+  },
+  {
+    "player_id": 104607,
+    "player_name": "Tomas Berdych",
+    "hand": "R",
+    "height": 196,
+    "ioc": "CZE",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 2.408,
+    "pca_y": -1.505,
+    "career_stats": {
+      "total_matches": 903,
+      "wins": 592,
+      "win_pct": 0.6556,
+      "best_rank_points": 5230
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5809,
+      "first_serve_win_pct": 0.7737,
+      "second_serve_win_pct": 0.5366,
+      "ace_rate": 0.1031,
+      "df_rate": 0.0314,
+      "bp_save_pct": 0.6181
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6741,
+      "return_pts_won_pct": 0.3859,
+      "dominance_ratio": 1.842
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+7.2%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+5.2%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+4.2%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "2.8%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.6%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-3.0%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 583,
+        "wins": 381,
+        "win_pct": 0.6535
+      },
+      "clay": {
+        "matches": 212,
+        "wins": 135,
+        "win_pct": 0.6368
+      },
+      "grass": {
+        "matches": 97,
+        "wins": 67,
+        "win_pct": 0.6907
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6373762376237624,
+      "rally_win_pcts": {
+        "1-3": 0.4927734375,
+        "4-6": 0.47183491355270496,
+        "7-9": 0.4221165279429251,
+        "10": 0.46911764705882353
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.3841330425299891,
+        "deuce_t_pct": 0.3451472191930207,
+        "ad_wide_pct": 0.42955635491606714,
+        "ad_t_pct": 0.3609112709832134
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5825242718446602,
+        "shots": 515,
+        "winner_pct": 0.1786407766990291
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5314576006252443,
+        "shots": 2559,
+        "winner_pct": 0.11215318483782728
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5167037861915368,
+        "shots": 3592,
+        "winner_pct": 0.08964365256124722
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.603225806451613,
+        "pts_played": 620
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5826893353941267,
+        "pts_played": 647
+      },
+      {
+        "serve_plus_1": "Body Serve + Forehand",
+        "win_pct": 0.5771428571428572,
+        "pts_played": 175
+      }
+    ]
+  },
+  {
+    "player_id": 105777,
+    "player_name": "Grigor Dimitrov",
+    "hand": "R",
+    "height": 188,
+    "ioc": "BUL",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 1.828,
+    "pca_y": -0.79,
+    "career_stats": {
+      "total_matches": 738,
+      "wins": 449,
+      "win_pct": 0.6084,
+      "best_rank_points": 5150
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6196,
+      "first_serve_win_pct": 0.7571,
+      "second_serve_win_pct": 0.5198,
+      "ace_rate": 0.0905,
+      "df_rate": 0.0431,
+      "bp_save_pct": 0.6074
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6664,
+      "return_pts_won_pct": 0.374,
+      "dominance_ratio": 1.8677
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+5.5%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+4.4%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+3.2%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "1.7%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "0.8%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-0.5%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 493,
+        "wins": 304,
+        "win_pct": 0.6166
+      },
+      "clay": {
+        "matches": 166,
+        "wins": 99,
+        "win_pct": 0.5964
+      },
+      "grass": {
+        "matches": 79,
+        "wins": 46,
+        "win_pct": 0.5823
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6453651685393258,
+      "rally_win_pcts": {
+        "1-3": 0.5007719184204111,
+        "4-6": 0.5154929577464789,
+        "7-9": 0.5064530485091233,
+        "10": 0.5247070809984717
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.3830518179215574,
+        "deuce_t_pct": 0.42699685084454625,
+        "ad_wide_pct": 0.48212879861439145,
+        "ad_t_pct": 0.30782553928515194
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5982683982683983,
+        "shots": 1155,
+        "winner_pct": 0.141991341991342
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.5877390326209224,
+        "shots": 1778,
+        "winner_pct": 0.1422947131608549
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5770437350064588,
+        "shots": 5419,
+        "winner_pct": 0.09152980254659532
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.7804878048780488,
+        "pts_played": 41
+      },
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7428571428571429,
+        "pts_played": 70
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6171171171171171,
+        "pts_played": 1776
+      }
+    ]
+  },
+  {
+    "player_id": 126203,
+    "player_name": "Taylor Fritz",
+    "hand": "R",
+    "height": 196,
+    "ioc": "USA",
+    "archetype": "Big Servers",
+    "cluster": 2,
+    "pca_x": 2.892,
+    "pca_y": -0.938,
+    "career_stats": {
+      "total_matches": 465,
+      "wins": 278,
+      "win_pct": 0.5978,
+      "best_rank_points": 5100
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5984,
+      "first_serve_win_pct": 0.7684,
+      "second_serve_win_pct": 0.5314,
+      "ace_rate": 0.1224,
+      "df_rate": 0.0293,
+      "bp_save_pct": 0.6122
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6728,
+      "return_pts_won_pct": 0.3613,
+      "dominance_ratio": 1.9596
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+6.7%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "+5.1%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+5.0%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.8%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "0.4%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-1.3%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 321,
+        "wins": 194,
+        "win_pct": 0.6044
+      },
+      "clay": {
+        "matches": 88,
+        "wins": 51,
+        "win_pct": 0.5795
+      },
+      "grass": {
+        "matches": 56,
+        "wins": 33,
+        "win_pct": 0.5893
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6705882352941176,
+      "rally_win_pcts": {
+        "1-3": 0.5261904761904762,
+        "4-6": 0.5116968698517298,
+        "7-9": 0.5003322259136213,
+        "10": 0.4726643598615917
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.38884615384615384,
+        "deuce_t_pct": 0.4176923076923077,
+        "ad_wide_pct": 0.46474358974358976,
+        "ad_t_pct": 0.3920940170940171
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.6178660049627791,
+        "shots": 403,
+        "winner_pct": 0.1687344913151365
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.6018795386586928,
+        "shots": 2341,
+        "winner_pct": 0.1503630926954293
+      },
+      {
+        "shot_name": "Backhand Line",
+        "win_pct": 0.5497382198952879,
+        "shots": 1146,
+        "winner_pct": 0.16666666666666666
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.8245614035087719,
+        "pts_played": 57
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6422222222222222,
+        "pts_played": 900
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.6380090497737556,
+        "pts_played": 884
+      }
+    ]
+  },
+  {
+    "player_id": 105227,
+    "player_name": "Marin Cilic",
+    "hand": "R",
+    "height": 198,
+    "ioc": "CRO",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 2.435,
+    "pca_y": -0.734,
+    "career_stats": {
+      "total_matches": 894,
+      "wins": 566,
+      "win_pct": 0.6331,
+      "best_rank_points": 5060
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5698,
+      "first_serve_win_pct": 0.7723,
+      "second_serve_win_pct": 0.5285,
+      "ace_rate": 0.1186,
+      "df_rate": 0.0367,
+      "bp_save_pct": 0.6132
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.668,
+      "return_pts_won_pct": 0.3789,
+      "dominance_ratio": 1.8438
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+7.0%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "+4.7%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+4.5%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "2.1%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.1%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-4.1%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 559,
+        "wins": 351,
+        "win_pct": 0.6279
+      },
+      "clay": {
+        "matches": 217,
+        "wins": 132,
+        "win_pct": 0.6083
+      },
+      "grass": {
+        "matches": 110,
+        "wins": 79,
+        "win_pct": 0.7182
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6047032474804032,
+      "rally_win_pcts": {
+        "1-3": 0.4897431477331495,
+        "4-6": 0.5020449897750511,
+        "7-9": 0.48902439024390243,
+        "10": 0.48404255319148937
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.38182773109243695,
+        "deuce_t_pct": 0.43146008403361347,
+        "ad_wide_pct": 0.5043202764976958,
+        "ad_t_pct": 0.29694700460829493
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5859728506787331,
+        "shots": 442,
+        "winner_pct": 0.17647058823529413
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.562296858071506,
+        "shots": 2769,
+        "winner_pct": 0.11159263271939328
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5302407516147974,
+        "shots": 3406,
+        "winner_pct": 0.1200822078684674
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.6363636363636364,
+        "pts_played": 55
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.5902255639097744,
+        "pts_played": 798
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5884353741496599,
+        "pts_played": 588
+      }
+    ]
+  },
+  {
+    "player_id": 208029,
+    "player_name": "Holger Rune",
+    "hand": "R",
+    "height": 188,
+    "ioc": "DEN",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 1.536,
+    "pca_y": -1.276,
+    "career_stats": {
+      "total_matches": 217,
+      "wins": 134,
+      "win_pct": 0.6175,
+      "best_rank_points": 4825
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6229,
+      "first_serve_win_pct": 0.7279,
+      "second_serve_win_pct": 0.5387,
+      "ace_rate": 0.0694,
+      "df_rate": 0.0424,
+      "bp_save_pct": 0.6248
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6567,
+      "return_pts_won_pct": 0.3687,
+      "dominance_ratio": 1.8536
+    },
+    "strengths": [
+      {
+        "metric": "Break Point Save %",
+        "diff": "+4.9%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+3.8%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+3.4%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "1.1%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-0.2%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-0.5%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 127,
+        "wins": 79,
+        "win_pct": 0.622
+      },
+      "clay": {
+        "matches": 73,
+        "wins": 45,
+        "win_pct": 0.6164
+      },
+      "grass": {
+        "matches": 17,
+        "wins": 10,
+        "win_pct": 0.5882
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6522948539638387,
+      "rally_win_pcts": {
+        "1-3": 0.46695325094035467,
+        "4-6": 0.517193947730399,
+        "7-9": 0.5521126760563381,
+        "10": 0.48951048951048953
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.4667332002661344,
+        "deuce_t_pct": 0.34763805721889557,
+        "ad_wide_pct": 0.49799635701275047,
+        "ad_t_pct": 0.3632058287795993
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.6584615384615384,
+        "shots": 325,
+        "winner_pct": 0.18153846153846154
+      },
+      {
+        "shot_name": "Backhand Inside-Out",
+        "win_pct": 0.5798816568047337,
+        "shots": 169,
+        "winner_pct": 0.15976331360946747
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5758998435054773,
+        "shots": 1917,
+        "winner_pct": 0.13354199269692227
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7078651685393258,
+        "pts_played": 89
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.578167115902965,
+        "pts_played": 742
+      },
+      {
+        "serve_plus_1": "Wide Serve + Backhand",
+        "win_pct": 0.5726141078838174,
+        "pts_played": 241
+      }
+    ]
+  },
+  {
+    "player_id": 104731,
+    "player_name": "Kevin Anderson",
+    "hand": "R",
+    "height": 203,
+    "ioc": "RSA",
+    "archetype": "Big Servers",
+    "cluster": 2,
+    "pca_x": 4.416,
+    "pca_y": -0.563,
+    "career_stats": {
+      "total_matches": 598,
+      "wins": 345,
+      "win_pct": 0.5769,
+      "best_rank_points": 4810
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6427,
+      "first_serve_win_pct": 0.7736,
+      "second_serve_win_pct": 0.5372,
+      "ace_rate": 0.1613,
+      "df_rate": 0.0368,
+      "bp_save_pct": 0.6323
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6884,
+      "return_pts_won_pct": 0.3418,
+      "dominance_ratio": 2.1358
+    },
+    "strengths": [
+      {
+        "metric": "Ace Rate",
+        "diff": "+8.9%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+7.2%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+6.6%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve %",
+        "diff": "3.2%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.1%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "-1.6%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 413,
+        "wins": 241,
+        "win_pct": 0.5835
+      },
+      "clay": {
+        "matches": 109,
+        "wins": 57,
+        "win_pct": 0.5229
+      },
+      "grass": {
+        "matches": 76,
+        "wins": 47,
+        "win_pct": 0.6184
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.5944055944055944,
+      "rally_win_pcts": {
+        "1-3": 0.5079691516709511,
+        "4-6": 0.4516728624535316,
+        "7-9": 0.435,
+        "10": 0.40384615384615385
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.37631184407796103,
+        "deuce_t_pct": 0.45577211394302847,
+        "ad_wide_pct": 0.36920529801324503,
+        "ad_t_pct": 0.48013245033112584
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5214646464646465,
+        "shots": 792,
+        "winner_pct": 0.11237373737373738
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.5073891625615764,
+        "shots": 203,
+        "winner_pct": 0.14285714285714285
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.4785714285714286,
+        "shots": 1120,
+        "winner_pct": 0.07589285714285714
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7058823529411765,
+        "pts_played": 34
+      },
+      {
+        "serve_plus_1": "Body Serve + Forehand",
+        "win_pct": 0.6346153846153846,
+        "pts_played": 52
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.6083916083916084,
+        "pts_played": 286
+      }
+    ]
+  },
+  {
+    "player_id": 128034,
+    "player_name": "Hubert Hurkacz",
+    "hand": "R",
+    "height": 196,
+    "ioc": "POL",
+    "archetype": "Big Servers",
+    "cluster": 2,
+    "pca_x": 3.632,
+    "pca_y": -1.243,
+    "career_stats": {
+      "total_matches": 346,
+      "wins": 208,
+      "win_pct": 0.6012,
+      "best_rank_points": 4235
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6348,
+      "first_serve_win_pct": 0.7651,
+      "second_serve_win_pct": 0.5302,
+      "ace_rate": 0.1371,
+      "df_rate": 0.0263,
+      "bp_save_pct": 0.6432
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6788,
+      "return_pts_won_pct": 0.3503,
+      "dominance_ratio": 2.037
+    },
+    "strengths": [
+      {
+        "metric": "Break Point Save %",
+        "diff": "+6.7%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "+6.5%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+6.3%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve %",
+        "diff": "2.4%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "1.1%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "-0.7%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 241,
+        "wins": 146,
+        "win_pct": 0.6058
+      },
+      "clay": {
+        "matches": 66,
+        "wins": 37,
+        "win_pct": 0.5606
+      },
+      "grass": {
+        "matches": 39,
+        "wins": 25,
+        "win_pct": 0.641
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6936323588305967,
+      "rally_win_pcts": {
+        "1-3": 0.537828224291595,
+        "4-6": 0.4851860358291226,
+        "7-9": 0.4478947368421053,
+        "10": 0.4714329361442102
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.37392281753465717,
+        "deuce_t_pct": 0.46736605470213566,
+        "ad_wide_pct": 0.49746698779171167,
+        "ad_t_pct": 0.3344406610746616
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5771812080536913,
+        "shots": 1192,
+        "winner_pct": 0.13842281879194632
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5400348818772792,
+        "shots": 6307,
+        "winner_pct": 0.10306009196131283
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.5091539795721719,
+        "shots": 5189,
+        "winner_pct": 0.09327423395644632
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.859504132231405,
+        "pts_played": 121
+      },
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7564102564102564,
+        "pts_played": 312
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6014400677678949,
+        "pts_played": 2361
+      }
+    ]
+  },
+  {
+    "player_id": 200000,
+    "player_name": "Felix Auger Aliassime",
+    "hand": "R",
+    "height": 193,
+    "ioc": "CAN",
+    "archetype": "Big Servers",
+    "cluster": 2,
+    "pca_x": 2.341,
+    "pca_y": 0.193,
+    "career_stats": {
+      "total_matches": 351,
+      "wins": 208,
+      "win_pct": 0.5926,
+      "best_rank_points": 4195
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6347,
+      "first_serve_win_pct": 0.7608,
+      "second_serve_win_pct": 0.5038,
+      "ace_rate": 0.1223,
+      "df_rate": 0.0532,
+      "bp_save_pct": 0.6096
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6669,
+      "return_pts_won_pct": 0.3663,
+      "dominance_ratio": 1.9489
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+5.9%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "+5.0%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+4.4%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "0.9%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "0.3%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-1.5%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 228,
+        "wins": 137,
+        "win_pct": 0.6009
+      },
+      "clay": {
+        "matches": 88,
+        "wins": 49,
+        "win_pct": 0.5568
+      },
+      "grass": {
+        "matches": 35,
+        "wins": 22,
+        "win_pct": 0.6286
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6557161629434954,
+      "rally_win_pcts": {
+        "1-3": 0.5284045124899275,
+        "4-6": 0.4755325273459988,
+        "7-9": 0.44430844553243576,
+        "10": 0.47109826589595377
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.39254440830622966,
+        "deuce_t_pct": 0.39404553415061294,
+        "ad_wide_pct": 0.412663149125243,
+        "ad_t_pct": 0.37073035267981114
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5702875399361023,
+        "shots": 626,
+        "winner_pct": 0.17412140575079874
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5470371610311349,
+        "shots": 2987,
+        "winner_pct": 0.10143957147639772
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.527389903329753,
+        "shots": 931,
+        "winner_pct": 0.13748657357679914
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7272727272727273,
+        "pts_played": 66
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6128608923884514,
+        "pts_played": 762
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5904645476772616,
+        "pts_played": 818
+      }
+    ]
+  },
+  {
+    "player_id": 104468,
+    "player_name": "Gilles Simon",
+    "hand": "R",
+    "height": 183,
+    "ioc": "FRA",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": -0.987,
+    "pca_y": -1.307,
+    "career_stats": {
+      "total_matches": 875,
+      "wins": 497,
+      "win_pct": 0.568,
+      "best_rank_points": 4170
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5715,
+      "first_serve_win_pct": 0.6951,
+      "second_serve_win_pct": 0.5154,
+      "ace_rate": 0.0539,
+      "df_rate": 0.0292,
+      "bp_save_pct": 0.5712
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6185,
+      "return_pts_won_pct": 0.3961,
+      "dominance_ratio": 1.6411
+    },
+    "strengths": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+3.9%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+1.5%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "+0.9%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "-0.7%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-1.8%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-4.0%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 518,
+        "wins": 298,
+        "win_pct": 0.5753
+      },
+      "clay": {
+        "matches": 255,
+        "wins": 144,
+        "win_pct": 0.5647
+      },
+      "grass": {
+        "matches": 93,
+        "wins": 51,
+        "win_pct": 0.5484
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.5958549222797928,
+      "rally_win_pcts": {
+        "1-3": 0.46788537549407117,
+        "4-6": 0.49948506694129763,
+        "7-9": 0.5112936344969199,
+        "10": 0.49477806788511747
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.4265676567656766,
+        "deuce_t_pct": 0.35602310231023104,
+        "ad_wide_pct": 0.41971958389868835,
+        "ad_t_pct": 0.3677069199457259
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5757031717534411,
+        "shots": 1671,
+        "winner_pct": 0.06642728904847396
+      },
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5722222222222222,
+        "shots": 180,
+        "winner_pct": 0.10555555555555556
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.5687361419068736,
+        "shots": 902,
+        "winner_pct": 0.0942350332594235
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.5818181818181818,
+        "pts_played": 495
+      },
+      {
+        "serve_plus_1": "Body Serve + Backhand",
+        "win_pct": 0.5753424657534246,
+        "pts_played": 73
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5520169851380042,
+        "pts_played": 471
+      }
+    ]
+  },
+  {
+    "player_id": 200282,
+    "player_name": "Alex De Minaur",
+    "hand": "R",
+    "height": 183,
+    "ioc": "AUS",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": -0.199,
+    "pca_y": -1.862,
+    "career_stats": {
+      "total_matches": 395,
+      "wins": 242,
+      "win_pct": 0.6127,
+      "best_rank_points": 4085
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5889,
+      "first_serve_win_pct": 0.7155,
+      "second_serve_win_pct": 0.5336,
+      "ace_rate": 0.0507,
+      "df_rate": 0.0318,
+      "bp_save_pct": 0.5759
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6408,
+      "return_pts_won_pct": 0.3986,
+      "dominance_ratio": 1.6774
+    },
+    "strengths": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+4.1%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+3.3%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+1.8%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Break Point Save %",
+        "diff": "0.0%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-2.1%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-2.2%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 285,
+        "wins": 181,
+        "win_pct": 0.6351
+      },
+      "clay": {
+        "matches": 61,
+        "wins": 29,
+        "win_pct": 0.4754
+      },
+      "grass": {
+        "matches": 49,
+        "wins": 32,
+        "win_pct": 0.6531
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6295666949872557,
+      "rally_win_pcts": {
+        "1-3": 0.5017333753545541,
+        "4-6": 0.48768809849521205,
+        "7-9": 0.531812725090036,
+        "10": 0.5045146726862303
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.30270585945104145,
+        "deuce_t_pct": 0.35740704691454156,
+        "ad_wide_pct": 0.44347269624573377,
+        "ad_t_pct": 0.25533276450511944
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.574294670846395,
+        "shots": 1595,
+        "winner_pct": 0.08652037617554859
+      },
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5739130434782609,
+        "shots": 345,
+        "winner_pct": 0.17681159420289855
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5727428326914848,
+        "shots": 4674,
+        "winner_pct": 0.05648267008985879
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7083333333333334,
+        "pts_played": 48
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.6039296794208894,
+        "pts_played": 967
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6002098635886673,
+        "pts_played": 953
+      }
+    ]
+  },
+  {
+    "player_id": 103720,
+    "player_name": "Lleyton Hewitt",
+    "hand": "R",
+    "height": 180,
+    "ioc": "AUS",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 0.372,
+    "pca_y": -0.641,
+    "career_stats": {
+      "total_matches": 381,
+      "wins": 238,
+      "win_pct": 0.6247,
+      "best_rank_points": 3990
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5415,
+      "first_serve_win_pct": 0.7399,
+      "second_serve_win_pct": 0.5247,
+      "ace_rate": 0.0844,
+      "df_rate": 0.0449,
+      "bp_save_pct": 0.584
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6407,
+      "return_pts_won_pct": 0.4054,
+      "dominance_ratio": 1.6468
+    },
+    "strengths": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+4.8%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+3.8%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+2.4%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Break Point Save %",
+        "diff": "0.8%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-0.7%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-7.0%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 237,
+        "wins": 143,
+        "win_pct": 0.6034
+      },
+      "clay": {
+        "matches": 55,
+        "wins": 31,
+        "win_pct": 0.5636
+      },
+      "grass": {
+        "matches": 89,
+        "wins": 64,
+        "win_pct": 0.7191
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6280752532561505,
+      "rally_win_pcts": {
+        "1-3": 0.5136971290817445,
+        "4-6": 0.5246662797446314,
+        "7-9": 0.5388026607538803,
+        "10": 0.49638336347197104
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.5328135152696556,
+        "deuce_t_pct": 0.2867121507472385,
+        "ad_wide_pct": 0.547695035460993,
+        "ad_t_pct": 0.3546099290780142
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5912938331318017,
+        "shots": 827,
+        "winner_pct": 0.09915356711003627
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5723573320491211,
+        "shots": 4153,
+        "winner_pct": 0.07994221045027691
+      },
+      {
+        "shot_name": "Backhand Inside-Out",
+        "win_pct": 0.5509554140127388,
+        "shots": 628,
+        "winner_pct": 0.09872611464968153
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.5428571428571428,
+        "pts_played": 140
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5327102803738317,
+        "pts_played": 107
+      },
+      {
+        "serve_plus_1": "Wide Serve + Backhand",
+        "win_pct": 0.4666666666666667,
+        "pts_played": 60
+      }
+    ]
+  },
+  {
+    "player_id": 104269,
+    "player_name": "Fernando Verdasco",
+    "hand": "L",
+    "height": 188,
+    "ioc": "ESP",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 0.272,
+    "pca_y": -1.274,
+    "career_stats": {
+      "total_matches": 913,
+      "wins": 511,
+      "win_pct": 0.5597,
+      "best_rank_points": 3900
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6742,
+      "first_serve_win_pct": 0.7105,
+      "second_serve_win_pct": 0.5128,
+      "ace_rate": 0.0675,
+      "df_rate": 0.0487,
+      "bp_save_pct": 0.5981
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6444,
+      "return_pts_won_pct": 0.3843,
+      "dominance_ratio": 1.7701
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve %",
+        "diff": "+6.3%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+2.7%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+2.2%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "0.9%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-0.4%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-1.1%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 464,
+        "wins": 247,
+        "win_pct": 0.5323
+      },
+      "clay": {
+        "matches": 349,
+        "wins": 210,
+        "win_pct": 0.6017
+      },
+      "grass": {
+        "matches": 86,
+        "wins": 46,
+        "win_pct": 0.5349
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.5949612403100775,
+      "rally_win_pcts": {
+        "1-3": 0.4847571189279732,
+        "4-6": 0.45829428303655106,
+        "7-9": 0.46826758147512865,
+        "10": 0.44291338582677164
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.3758586849852797,
+        "deuce_t_pct": 0.4352306182531894,
+        "ad_wide_pct": 0.5621364357482813,
+        "ad_t_pct": 0.2596509783183501
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5755573905862923,
+        "shots": 1211,
+        "winner_pct": 0.18414533443435177
+      },
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5263157894736842,
+        "shots": 228,
+        "winner_pct": 0.11403508771929824
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.5234248788368336,
+        "shots": 619,
+        "winner_pct": 0.1825525040387722
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.5842956120092379,
+        "pts_played": 433
+      },
+      {
+        "serve_plus_1": "Body Serve + Backhand",
+        "win_pct": 0.5405405405405406,
+        "pts_played": 37
+      },
+      {
+        "serve_plus_1": "Body Serve + Forehand",
+        "win_pct": 0.5123456790123457,
+        "pts_played": 162
+      }
+    ]
+  },
+  {
+    "player_id": 104792,
+    "player_name": "Gael Monfils",
+    "hand": "R",
+    "height": 193,
+    "ioc": "FRA",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 0.827,
+    "pca_y": -0.468,
+    "career_stats": {
+      "total_matches": 877,
+      "wins": 549,
+      "win_pct": 0.626,
+      "best_rank_points": 3815
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6236,
+      "first_serve_win_pct": 0.7334,
+      "second_serve_win_pct": 0.5031,
+      "ace_rate": 0.106,
+      "df_rate": 0.0452,
+      "bp_save_pct": 0.5897
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6455,
+      "return_pts_won_pct": 0.3831,
+      "dominance_ratio": 1.7664
+    },
+    "strengths": [
+      {
+        "metric": "Ace Rate",
+        "diff": "+3.4%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+3.2%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+2.6%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve %",
+        "diff": "1.2%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "0.3%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-0.7%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 564,
+        "wins": 367,
+        "win_pct": 0.6507
+      },
+      "clay": {
+        "matches": 226,
+        "wins": 131,
+        "win_pct": 0.5796
+      },
+      "grass": {
+        "matches": 79,
+        "wins": 46,
+        "win_pct": 0.5823
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6552462526766595,
+      "rally_win_pcts": {
+        "1-3": 0.5252378648605064,
+        "4-6": 0.499790004199916,
+        "7-9": 0.4925764192139738,
+        "10": 0.4988416988416988
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.45923180592991913,
+        "deuce_t_pct": 0.3670822102425876,
+        "ad_wide_pct": 0.4180645161290323,
+        "ad_t_pct": 0.39815668202764976
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5850467289719626,
+        "shots": 535,
+        "winner_pct": 0.16822429906542055
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5599157229391625,
+        "shots": 3797,
+        "winner_pct": 0.09112457203055044
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5384480028154144,
+        "shots": 5683,
+        "winner_pct": 0.08111912722153793
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.7058823529411765,
+        "pts_played": 34
+      },
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.6802030456852792,
+        "pts_played": 197
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6135662898252826,
+        "pts_played": 973
+      }
+    ]
+  },
+  {
+    "player_id": 105676,
+    "player_name": "David Goffin",
+    "hand": "R",
+    "height": 180,
+    "ioc": "BEL",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": -0.452,
+    "pca_y": -0.576,
+    "career_stats": {
+      "total_matches": 577,
+      "wins": 329,
+      "win_pct": 0.5702,
+      "best_rank_points": 3775
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5848,
+      "first_serve_win_pct": 0.7161,
+      "second_serve_win_pct": 0.5046,
+      "ace_rate": 0.0694,
+      "df_rate": 0.0424,
+      "bp_save_pct": 0.5738
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6285,
+      "return_pts_won_pct": 0.3951,
+      "dominance_ratio": 1.6711
+    },
+    "strengths": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+3.8%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+1.4%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+0.6%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Ace Rate",
+        "diff": "-0.2%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-0.5%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-2.6%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 369,
+        "wins": 211,
+        "win_pct": 0.5718
+      },
+      "clay": {
+        "matches": 152,
+        "wins": 88,
+        "win_pct": 0.5789
+      },
+      "grass": {
+        "matches": 56,
+        "wins": 30,
+        "win_pct": 0.5357
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.5712468193384224,
+      "rally_win_pcts": {
+        "1-3": 0.5032618825722274,
+        "4-6": 0.5036496350364964,
+        "7-9": 0.5514018691588785,
+        "10": 0.5411764705882353
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.41509433962264153,
+        "deuce_t_pct": 0.42057212416311623,
+        "ad_wide_pct": 0.49432576769025366,
+        "ad_t_pct": 0.35580774365821094
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.6189591078066915,
+        "shots": 538,
+        "winner_pct": 0.13011152416356878
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5543964232488823,
+        "shots": 2013,
+        "winner_pct": 0.08594138102334824
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.5449700199866756,
+        "shots": 1501,
+        "winner_pct": 0.10659560293137908
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7777777777777778,
+        "pts_played": 36
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6007853403141361,
+        "pts_played": 764
+      },
+      {
+        "serve_plus_1": "Body Serve + Forehand",
+        "win_pct": 0.593939393939394,
+        "pts_played": 165
+      }
+    ]
+  },
+  {
+    "player_id": 106043,
+    "player_name": "Diego Schwartzman",
+    "hand": "R",
+    "height": 170,
+    "ioc": "ARG",
+    "archetype": "Grinders",
+    "cluster": 1,
+    "pca_x": -2.881,
+    "pca_y": -1.708,
+    "career_stats": {
+      "total_matches": 466,
+      "wins": 248,
+      "win_pct": 0.5322,
+      "best_rank_points": 3765
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6318,
+      "first_serve_win_pct": 0.6562,
+      "second_serve_win_pct": 0.5003,
+      "ace_rate": 0.0253,
+      "df_rate": 0.0381,
+      "bp_save_pct": 0.5461
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.5985,
+      "return_pts_won_pct": 0.4151,
+      "dominance_ratio": 1.5158
+    },
+    "strengths": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+5.8%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "+2.1%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+-0.0%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Break Point Save %",
+        "diff": "-3.0%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "-4.6%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-4.7%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 226,
+        "wins": 118,
+        "win_pct": 0.5221
+      },
+      "clay": {
+        "matches": 214,
+        "wins": 120,
+        "win_pct": 0.5607
+      },
+      "grass": {
+        "matches": 26,
+        "wins": 10,
+        "win_pct": 0.3846
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.5967741935483871,
+      "rally_win_pcts": {
+        "1-3": 0.42362525458248473,
+        "4-6": 0.48764044943820223,
+        "7-9": 0.464,
+        "10": 0.4847457627118644
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.45532559313478044,
+        "deuce_t_pct": 0.2917718324078748,
+        "ad_wide_pct": 0.3238356164383562,
+        "ad_t_pct": 0.4482191780821918
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.6666666666666666,
+        "shots": 135,
+        "winner_pct": 0.13333333333333333
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.5454545454545454,
+        "shots": 572,
+        "winner_pct": 0.10839160839160839
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5440806045340051,
+        "shots": 1588,
+        "winner_pct": 0.06675062972292191
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Body Serve + Forehand",
+        "win_pct": 0.5743801652892562,
+        "pts_played": 242
+      },
+      {
+        "serve_plus_1": "Wide Serve + Backhand",
+        "win_pct": 0.5596026490066225,
+        "pts_played": 302
+      },
+      {
+        "serve_plus_1": "Body Serve + Backhand",
+        "win_pct": 0.5594405594405595,
+        "pts_played": 143
+      }
+    ]
+  },
+  {
+    "player_id": 133430,
+    "player_name": "Denis Shapovalov",
+    "hand": "L",
+    "height": 185,
+    "ioc": "CAN",
+    "archetype": "Big Servers",
+    "cluster": 2,
+    "pca_x": 2.648,
+    "pca_y": 1.251,
+    "career_stats": {
+      "total_matches": 373,
+      "wins": 206,
+      "win_pct": 0.5523,
+      "best_rank_points": 3625
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5933,
+      "first_serve_win_pct": 0.7676,
+      "second_serve_win_pct": 0.5178,
+      "ace_rate": 0.1052,
+      "df_rate": 0.0685,
+      "bp_save_pct": 0.6137
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6662,
+      "return_pts_won_pct": 0.3543,
+      "dominance_ratio": 1.9923
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+6.6%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+4.4%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+3.8%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "-0.3%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-1.8%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-3.1%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 264,
+        "wins": 151,
+        "win_pct": 0.572
+      },
+      "clay": {
+        "matches": 69,
+        "wins": 36,
+        "win_pct": 0.5217
+      },
+      "grass": {
+        "matches": 40,
+        "wins": 19,
+        "win_pct": 0.475
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6071428571428571,
+      "rally_win_pcts": {
+        "1-3": 0.48731839448411723,
+        "4-6": 0.5359820089955023,
+        "7-9": 0.48232848232848236,
+        "10": 0.5295857988165681
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.307817149039762,
+        "deuce_t_pct": 0.5601839329185826,
+        "ad_wide_pct": 0.5811965811965812,
+        "ad_t_pct": 0.2723253757736516
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5925720620842572,
+        "shots": 1804,
+        "winner_pct": 0.2278270509977827
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.5559655596555966,
+        "shots": 813,
+        "winner_pct": 0.23124231242312424
+      },
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5267379679144385,
+        "shots": 374,
+        "winner_pct": 0.12566844919786097
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7142857142857143,
+        "pts_played": 119
+      },
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.6831683168316832,
+        "pts_played": 101
+      },
+      {
+        "serve_plus_1": "Body Serve + Forehand",
+        "win_pct": 0.6174863387978142,
+        "pts_played": 183
+      }
+    ]
+  },
+  {
+    "player_id": 104545,
+    "player_name": "John Isner",
+    "hand": "R",
+    "height": 206,
+    "ioc": "USA",
+    "archetype": "Big Servers",
+    "cluster": 2,
+    "pca_x": 7.763,
+    "pca_y": -0.831,
+    "career_stats": {
+      "total_matches": 780,
+      "wins": 479,
+      "win_pct": 0.6141,
+      "best_rank_points": 3570
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6887,
+      "first_serve_win_pct": 0.7906,
+      "second_serve_win_pct": 0.5651,
+      "ace_rate": 0.2142,
+      "df_rate": 0.0261,
+      "bp_save_pct": 0.688
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.7203,
+      "return_pts_won_pct": 0.2977,
+      "dominance_ratio": 2.5633
+    },
+    "strengths": [
+      {
+        "metric": "Ace Rate",
+        "diff": "+14.2%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+11.2%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+9.8%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "6.5%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "1.2%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "-6.0%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 558,
+        "wins": 346,
+        "win_pct": 0.6201
+      },
+      "clay": {
+        "matches": 139,
+        "wins": 77,
+        "win_pct": 0.554
+      },
+      "grass": {
+        "matches": 83,
+        "wins": 56,
+        "win_pct": 0.6747
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.7134587554269175,
+      "rally_win_pcts": {
+        "1-3": 0.5248142250530785,
+        "4-6": 0.4146341463414634,
+        "7-9": 0.3509272467902996,
+        "10": 0.42016806722689076
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.43695441319107664,
+        "deuce_t_pct": 0.3326867119301649,
+        "ad_wide_pct": 0.4859989229940765,
+        "ad_t_pct": 0.38395261173936457
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5242718446601942,
+        "shots": 309,
+        "winner_pct": 0.18446601941747573
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.4921418949259093,
+        "shots": 2227,
+        "winner_pct": 0.1383026493039964
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.48940269749518306,
+        "shots": 1557,
+        "winner_pct": 0.15285806037251123
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Body Serve + Volley/Overhead",
+        "win_pct": 0.6521739130434783,
+        "pts_played": 46
+      },
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.6410256410256411,
+        "pts_played": 273
+      },
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.5862068965517241,
+        "pts_played": 116
+      }
+    ]
+  },
+  {
+    "player_id": 103484,
+    "player_name": "James Blake",
+    "hand": "R",
+    "height": 185,
+    "ioc": "USA",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 0.921,
+    "pca_y": -0.997,
+    "career_stats": {
+      "total_matches": 419,
+      "wins": 254,
+      "win_pct": 0.6062,
+      "best_rank_points": 3550
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5716,
+      "first_serve_win_pct": 0.7421,
+      "second_serve_win_pct": 0.5249,
+      "ace_rate": 0.0804,
+      "df_rate": 0.0348,
+      "bp_save_pct": 0.5935
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6487,
+      "return_pts_won_pct": 0.3852,
+      "dominance_ratio": 1.7593
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+4.0%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+2.8%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+2.6%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Ace Rate",
+        "diff": "0.9%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.3%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-4.0%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 316,
+        "wins": 203,
+        "win_pct": 0.6424
+      },
+      "clay": {
+        "matches": 59,
+        "wins": 28,
+        "win_pct": 0.4746
+      },
+      "grass": {
+        "matches": 39,
+        "wins": 21,
+        "win_pct": 0.5385
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.566350710900474,
+      "rally_win_pcts": {
+        "1-3": 0.49516908212560384,
+        "4-6": 0.49870801033591733,
+        "7-9": 0.5749128919860628,
+        "10": 0.48743718592964824
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.31923764145324596,
+        "deuce_t_pct": 0.3716497915425849,
+        "ad_wide_pct": 0.5584415584415584,
+        "ad_t_pct": 0.3142857142857143
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5576407506702413,
+        "shots": 1119,
+        "winner_pct": 0.0741733690795353
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5496845425867508,
+        "shots": 1268,
+        "winner_pct": 0.10094637223974763
+      },
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.5389048991354467,
+        "shots": 347,
+        "winner_pct": 0.14697406340057637
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6,
+        "pts_played": 20
+      },
+      {
+        "serve_plus_1": "Body Serve + Forehand",
+        "win_pct": 0.5714285714285714,
+        "pts_played": 14
+      }
+    ]
+  },
+  {
+    "player_id": 111815,
+    "player_name": "Cameron Norrie",
+    "hand": "L",
+    "height": 188,
+    "ioc": "GBR",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 0.27,
+    "pca_y": -1.562,
+    "career_stats": {
+      "total_matches": 359,
+      "wins": 208,
+      "win_pct": 0.5794,
+      "best_rank_points": 3550
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6517,
+      "first_serve_win_pct": 0.7083,
+      "second_serve_win_pct": 0.5112,
+      "ace_rate": 0.0611,
+      "df_rate": 0.0357,
+      "bp_save_pct": 0.6104
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6393,
+      "return_pts_won_pct": 0.3807,
+      "dominance_ratio": 1.7934
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve %",
+        "diff": "+4.1%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+3.5%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+2.3%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "0.6%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.2%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-1.1%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 219,
+        "wins": 125,
+        "win_pct": 0.5708
+      },
+      "clay": {
+        "matches": 99,
+        "wins": 61,
+        "win_pct": 0.6162
+      },
+      "grass": {
+        "matches": 41,
+        "wins": 22,
+        "win_pct": 0.5366
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.5888077858880778,
+      "rally_win_pcts": {
+        "1-3": 0.4697986577181208,
+        "4-6": 0.48027210884353744,
+        "7-9": 0.5030487804878049,
+        "10": 0.5178571428571429
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.29738387613454353,
+        "deuce_t_pct": 0.5152162306460224,
+        "ad_wide_pct": 0.6177334116265414,
+        "ad_t_pct": 0.22431004110393424
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5748373101952278,
+        "shots": 922,
+        "winner_pct": 0.1279826464208243
+      },
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5691489361702128,
+        "shots": 188,
+        "winner_pct": 0.047872340425531915
+      },
+      {
+        "shot_name": "Backhand Line",
+        "win_pct": 0.5570291777188329,
+        "shots": 377,
+        "winner_pct": 0.06631299734748011
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6123348017621145,
+        "pts_played": 454
+      },
+      {
+        "serve_plus_1": "T Serve + Backhand",
+        "win_pct": 0.5827338129496403,
+        "pts_played": 139
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.58,
+        "pts_played": 450
+      }
+    ]
+  },
+  {
+    "player_id": 103900,
+    "player_name": "David Nalbandian",
+    "hand": "R",
+    "height": 180,
+    "ioc": "ARG",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": -0.545,
+    "pca_y": -1.762,
+    "career_stats": {
+      "total_matches": 352,
+      "wins": 234,
+      "win_pct": 0.6648,
+      "best_rank_points": 3500
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5865,
+      "first_serve_win_pct": 0.7091,
+      "second_serve_win_pct": 0.5316,
+      "ace_rate": 0.0525,
+      "df_rate": 0.0405,
+      "bp_save_pct": 0.5795
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6358,
+      "return_pts_won_pct": 0.4135,
+      "dominance_ratio": 1.6128
+    },
+    "strengths": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+5.6%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+3.1%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+1.3%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-0.3%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-1.9%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-2.5%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 201,
+        "wins": 134,
+        "win_pct": 0.6667
+      },
+      "clay": {
+        "matches": 106,
+        "wins": 71,
+        "win_pct": 0.6698
+      },
+      "grass": {
+        "matches": 32,
+        "wins": 20,
+        "win_pct": 0.625
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6263048016701461,
+      "rally_win_pcts": {
+        "1-3": 0.49066959385290887,
+        "4-6": 0.5194805194805194,
+        "7-9": 0.5064377682403434,
+        "10": 0.5155555555555555
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.3187935034802784,
+        "deuce_t_pct": 0.4301624129930394,
+        "ad_wide_pct": 0.6004036326942482,
+        "ad_t_pct": 0.29616548940464177
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5897435897435898,
+        "shots": 1053,
+        "winner_pct": 0.08167141500474834
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.558187863674148,
+        "shots": 2406,
+        "winner_pct": 0.0656691604322527
+      },
+      {
+        "shot_name": "Backhand Inside-Out",
+        "win_pct": 0.5508196721311476,
+        "shots": 305,
+        "winner_pct": 0.08852459016393442
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5961538461538461,
+        "pts_played": 52
+      },
+      {
+        "serve_plus_1": "Wide Serve + Backhand",
+        "win_pct": 0.5849056603773585,
+        "pts_played": 53
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.4878048780487805,
+        "pts_played": 41
+      }
+    ]
+  },
+  {
+    "player_id": 104022,
+    "player_name": "Mikhail Youzhny",
+    "hand": "R",
+    "height": 183,
+    "ioc": "RUS",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": -0.285,
+    "pca_y": -1.486,
+    "career_stats": {
+      "total_matches": 661,
+      "wins": 357,
+      "win_pct": 0.5401,
+      "best_rank_points": 3500
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6094,
+      "first_serve_win_pct": 0.7035,
+      "second_serve_win_pct": 0.5213,
+      "ace_rate": 0.0526,
+      "df_rate": 0.0325,
+      "bp_save_pct": 0.5852
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6313,
+      "return_pts_won_pct": 0.3847,
+      "dominance_ratio": 1.7213
+    },
+    "strengths": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+2.7%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+2.1%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+0.9%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "0.2%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-0.2%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-1.9%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 378,
+        "wins": 209,
+        "win_pct": 0.5529
+      },
+      "clay": {
+        "matches": 188,
+        "wins": 92,
+        "win_pct": 0.4894
+      },
+      "grass": {
+        "matches": 76,
+        "wins": 43,
+        "win_pct": 0.5658
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.606516290726817,
+      "rally_win_pcts": {
+        "1-3": 0.5241090146750524,
+        "4-6": 0.5032786885245901,
+        "7-9": 0.5089285714285714,
+        "10": 0.4873417721518987
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.36114421930870083,
+        "deuce_t_pct": 0.4833134684147795,
+        "ad_wide_pct": 0.5630689206762028,
+        "ad_t_pct": 0.31469440832249673
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.544290288153682,
+        "shots": 937,
+        "winner_pct": 0.08004268943436499
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5384036144578314,
+        "shots": 1328,
+        "winner_pct": 0.08734939759036145
+      },
+      {
+        "shot_name": "Backhand Inside-Out",
+        "win_pct": 0.5368421052631579,
+        "shots": 190,
+        "winner_pct": 0.11052631578947368
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.5488372093023256,
+        "pts_played": 215
+      },
+      {
+        "serve_plus_1": "T Serve + Backhand",
+        "win_pct": 0.5252525252525253,
+        "pts_played": 99
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5245098039215687,
+        "pts_played": 204
+      }
+    ]
+  },
+  {
+    "player_id": 126205,
+    "player_name": "Tommy Paul",
+    "hand": "R",
+    "height": 185,
+    "ioc": "USA",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 0.475,
+    "pca_y": -2.146,
+    "career_stats": {
+      "total_matches": 295,
+      "wins": 173,
+      "win_pct": 0.5864,
+      "best_rank_points": 3410
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6143,
+      "first_serve_win_pct": 0.7158,
+      "second_serve_win_pct": 0.5376,
+      "ace_rate": 0.0655,
+      "df_rate": 0.0276,
+      "bp_save_pct": 0.595
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6459,
+      "return_pts_won_pct": 0.3866,
+      "dominance_ratio": 1.7297
+    },
+    "strengths": [
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+3.7%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+2.9%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+2.3%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Double Fault Rate",
+        "diff": "1.0%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "0.3%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-0.6%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 207,
+        "wins": 124,
+        "win_pct": 0.599
+      },
+      "clay": {
+        "matches": 52,
+        "wins": 25,
+        "win_pct": 0.4808
+      },
+      "grass": {
+        "matches": 36,
+        "wins": 24,
+        "win_pct": 0.6667
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6081081081081081,
+      "rally_win_pcts": {
+        "1-3": 0.5041204887752202,
+        "4-6": 0.4888408927285817,
+        "7-9": 0.5294117647058824,
+        "10": 0.5129151291512916
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.41326209930861096,
+        "deuce_t_pct": 0.31238214959145194,
+        "ad_wide_pct": 0.4654818865345181,
+        "ad_t_pct": 0.28503075871496925
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5746753246753247,
+        "shots": 308,
+        "winner_pct": 0.15584415584415584
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5594343791427309,
+        "shots": 2263,
+        "winner_pct": 0.07909854175872735
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5427181514138036,
+        "shots": 3289,
+        "winner_pct": 0.07570690179385832
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7032258064516129,
+        "pts_played": 155
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5869565217391305,
+        "pts_played": 598
+      },
+      {
+        "serve_plus_1": "Body Serve + Forehand",
+        "win_pct": 0.5775577557755776,
+        "pts_played": 303
+      }
+    ]
+  },
+  {
+    "player_id": 103498,
+    "player_name": "Marat Safin",
+    "hand": "R",
+    "height": 193,
+    "ioc": "RUS",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 1.542,
+    "pca_y": -0.719,
+    "career_stats": {
+      "total_matches": 214,
+      "wins": 117,
+      "win_pct": 0.5467,
+      "best_rank_points": 3390
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5757,
+      "first_serve_win_pct": 0.742,
+      "second_serve_win_pct": 0.5246,
+      "ace_rate": 0.1017,
+      "df_rate": 0.0294,
+      "bp_save_pct": 0.5957
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6493,
+      "return_pts_won_pct": 0.3672,
+      "dominance_ratio": 1.8539
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+4.0%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "+3.0%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+2.7%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "1.0%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.8%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-3.5%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 124,
+        "wins": 68,
+        "win_pct": 0.5484
+      },
+      "clay": {
+        "matches": 55,
+        "wins": 26,
+        "win_pct": 0.4727
+      },
+      "grass": {
+        "matches": 26,
+        "wins": 17,
+        "win_pct": 0.6538
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6507936507936508,
+      "rally_win_pcts": {
+        "1-3": 0.528399781540142,
+        "4-6": 0.48796356538711777,
+        "7-9": 0.49108367626886146,
+        "10": 0.48012718600953896
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.29409005628517826,
+        "deuce_t_pct": 0.4892120075046904,
+        "ad_wide_pct": 0.5231991796975135,
+        "ad_t_pct": 0.29966675211484234
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.5979381443298969,
+        "shots": 194,
+        "winner_pct": 0.12886597938144329
+      },
+      {
+        "shot_name": "Backhand Inside-Out",
+        "win_pct": 0.5665961945031712,
+        "shots": 473,
+        "winner_pct": 0.09302325581395349
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5601907032181168,
+        "shots": 1678,
+        "winner_pct": 0.10131108462455304
+      }
+    ],
+    "top_combos": []
+  },
+  {
+    "player_id": 105807,
+    "player_name": "Pablo Carreno Busta",
+    "hand": "R",
+    "height": 188,
+    "ioc": "ESP",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 0.118,
+    "pca_y": -2.399,
+    "career_stats": {
+      "total_matches": 488,
+      "wins": 270,
+      "win_pct": 0.5533,
+      "best_rank_points": 3325
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6509,
+      "first_serve_win_pct": 0.6989,
+      "second_serve_win_pct": 0.5288,
+      "ace_rate": 0.0535,
+      "df_rate": 0.0236,
+      "bp_save_pct": 0.5976
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6387,
+      "return_pts_won_pct": 0.3807,
+      "dominance_ratio": 1.7889
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve %",
+        "diff": "+4.0%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+2.8%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "+2.3%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Double Fault Rate",
+        "diff": "1.4%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "-0.3%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "-1.8%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 267,
+        "wins": 151,
+        "win_pct": 0.5655
+      },
+      "clay": {
+        "matches": 201,
+        "wins": 113,
+        "win_pct": 0.5622
+      },
+      "grass": {
+        "matches": 20,
+        "wins": 6,
+        "win_pct": 0.3
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6063829787234043,
+      "rally_win_pcts": {
+        "1-3": 0.4777628032345013,
+        "4-6": 0.49756888168557534,
+        "7-9": 0.5547703180212014,
+        "10": 0.4852459016393443
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.3839712918660287,
+        "deuce_t_pct": 0.3008373205741627,
+        "ad_wide_pct": 0.4574607329842932,
+        "ad_t_pct": 0.31544502617801046
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.6436781609195402,
+        "shots": 174,
+        "winner_pct": 0.1896551724137931
+      },
+      {
+        "shot_name": "Backhand Inside-Out",
+        "win_pct": 0.6017699115044248,
+        "shots": 113,
+        "winner_pct": 0.17699115044247787
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5845588235294118,
+        "shots": 1088,
+        "winner_pct": 0.11213235294117647
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Body Serve + Forehand",
+        "win_pct": 0.6077586206896551,
+        "pts_played": 232
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.6024691358024692,
+        "pts_played": 405
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.53954802259887,
+        "pts_played": 354
+      }
+    ]
+  },
+  {
+    "player_id": 104386,
+    "player_name": "Janko Tipsarevic",
+    "hand": "R",
+    "height": 180,
+    "ioc": "SRB",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 1.108,
+    "pca_y": -0.325,
+    "career_stats": {
+      "total_matches": 486,
+      "wins": 254,
+      "win_pct": 0.5226,
+      "best_rank_points": 3320
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5627,
+      "first_serve_win_pct": 0.7407,
+      "second_serve_win_pct": 0.5238,
+      "ace_rate": 0.0886,
+      "df_rate": 0.0322,
+      "bp_save_pct": 0.5715
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6452,
+      "return_pts_won_pct": 0.366,
+      "dominance_ratio": 1.8624
+    },
+    "strengths": [
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+3.9%"
+      },
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+2.3%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+2.3%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.6%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "-0.4%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-4.8%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 289,
+        "wins": 156,
+        "win_pct": 0.5398
+      },
+      "clay": {
+        "matches": 119,
+        "wins": 58,
+        "win_pct": 0.4874
+      },
+      "grass": {
+        "matches": 70,
+        "wins": 38,
+        "win_pct": 0.5429
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6264705882352941,
+      "rally_win_pcts": {
+        "1-3": 0.4888558692421991,
+        "4-6": 0.4681528662420382,
+        "7-9": 0.4774193548387097,
+        "10": 0.5263157894736842
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.2713004484304933,
+        "deuce_t_pct": 0.4633781763826607,
+        "ad_wide_pct": 0.45298446443172524,
+        "ad_t_pct": 0.3041700735895339
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5514792899408284,
+        "shots": 845,
+        "winner_pct": 0.08165680473372781
+      },
+      {
+        "shot_name": "Forehand Crosscourt",
+        "win_pct": 0.5394990366088632,
+        "shots": 1038,
+        "winner_pct": 0.07996146435452794
+      },
+      {
+        "shot_name": "Backhand Crosscourt",
+        "win_pct": 0.5122103944896681,
+        "shots": 1597,
+        "winner_pct": 0.031308703819661866
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5933609958506224,
+        "pts_played": 241
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.5838150289017341,
+        "pts_played": 173
+      },
+      {
+        "serve_plus_1": "T Serve + Backhand",
+        "win_pct": 0.5714285714285714,
+        "pts_played": 77
+      }
+    ]
+  },
+  {
+    "player_id": 103344,
+    "player_name": "Ivan Ljubicic",
+    "hand": "R",
+    "height": 193,
+    "ioc": "CRO",
+    "archetype": "Big Servers",
+    "cluster": 2,
+    "pca_x": 3.865,
+    "pca_y": -0.731,
+    "career_stats": {
+      "total_matches": 403,
+      "wins": 254,
+      "win_pct": 0.6303,
+      "best_rank_points": 3315
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.5981,
+      "first_serve_win_pct": 0.7816,
+      "second_serve_win_pct": 0.5275,
+      "ace_rate": 0.156,
+      "df_rate": 0.0268,
+      "bp_save_pct": 0.6336
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6796,
+      "return_pts_won_pct": 0.3533,
+      "dominance_ratio": 2.0115
+    },
+    "strengths": [
+      {
+        "metric": "Ace Rate",
+        "diff": "+8.4%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+8.0%"
+      },
+      {
+        "metric": "Break Point Save %",
+        "diff": "+5.8%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Double Fault Rate",
+        "diff": "1.1%"
+      },
+      {
+        "metric": "Return Pts Won %",
+        "diff": "-0.4%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "-1.3%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 251,
+        "wins": 162,
+        "win_pct": 0.6454
+      },
+      "clay": {
+        "matches": 91,
+        "wins": 54,
+        "win_pct": 0.5934
+      },
+      "grass": {
+        "matches": 34,
+        "wins": 19,
+        "win_pct": 0.5588
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6407185628742516,
+      "rally_win_pcts": {
+        "1-3": 0.5348542458808618,
+        "4-6": 0.4826388888888889,
+        "7-9": 0.39705882352941174,
+        "10": 0.4247787610619469
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.3896595208070618,
+        "deuce_t_pct": 0.44388398486759145,
+        "ad_wide_pct": 0.5453277545327755,
+        "ad_t_pct": 0.3054393305439331
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Line",
+        "win_pct": 0.5076142131979695,
+        "shots": 197,
+        "winner_pct": 0.08629441624365482
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5,
+        "shots": 326,
+        "winner_pct": 0.07668711656441718
+      },
+      {
+        "shot_name": "Backhand Line",
+        "win_pct": 0.4973821989528796,
+        "shots": 191,
+        "winner_pct": 0.12041884816753927
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.7692307692307693,
+        "pts_played": 13
+      },
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.3333333333333333,
+        "pts_played": 15
+      }
+    ]
+  },
+  {
+    "player_id": 104755,
+    "player_name": "Richard Gasquet",
+    "hand": "R",
+    "height": 185,
+    "ioc": "FRA",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 1.042,
+    "pca_y": -1.734,
+    "career_stats": {
+      "total_matches": 942,
+      "wins": 576,
+      "win_pct": 0.6115,
+      "best_rank_points": 3300
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6147,
+      "first_serve_win_pct": 0.7331,
+      "second_serve_win_pct": 0.5366,
+      "ace_rate": 0.0723,
+      "df_rate": 0.0312,
+      "bp_save_pct": 0.5876
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6572,
+      "return_pts_won_pct": 0.3813,
+      "dominance_ratio": 1.817
+    },
+    "strengths": [
+      {
+        "metric": "2nd Serve Win %",
+        "diff": "+3.6%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+3.5%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+3.1%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Double Fault Rate",
+        "diff": "0.7%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "0.4%"
+      },
+      {
+        "metric": "Ace Rate",
+        "diff": "0.0%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 572,
+        "wins": 342,
+        "win_pct": 0.5979
+      },
+      "clay": {
+        "matches": 245,
+        "wins": 150,
+        "win_pct": 0.6122
+      },
+      "grass": {
+        "matches": 113,
+        "wins": 75,
+        "win_pct": 0.6637
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.5941240478781284,
+      "rally_win_pcts": {
+        "1-3": 0.48106495294927704,
+        "4-6": 0.5049559471365639,
+        "7-9": 0.4934601664684899,
+        "10": 0.4655819774718398
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.37924101533048504,
+        "deuce_t_pct": 0.46117114852978136,
+        "ad_wide_pct": 0.5359009628610729,
+        "ad_t_pct": 0.3392022008253095
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Backhand Inside-Out",
+        "win_pct": 0.5911949685534591,
+        "shots": 477,
+        "winner_pct": 0.1740041928721174
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5506970849176173,
+        "shots": 1578,
+        "winner_pct": 0.07160963244613434
+      },
+      {
+        "shot_name": "Backhand Line",
+        "win_pct": 0.5487588652482269,
+        "shots": 1128,
+        "winner_pct": 0.1879432624113475
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Volley/Overhead",
+        "win_pct": 0.7684210526315789,
+        "pts_played": 95
+      },
+      {
+        "serve_plus_1": "T Serve + Volley/Overhead",
+        "win_pct": 0.6440677966101694,
+        "pts_played": 59
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.5947242206235012,
+        "pts_played": 417
+      }
+    ]
+  },
+  {
+    "player_id": 103602,
+    "player_name": "Fernando Gonzalez",
+    "hand": "R",
+    "height": 183,
+    "ioc": "CHI",
+    "archetype": "All-Court Elite",
+    "cluster": 0,
+    "pca_x": 2.216,
+    "pca_y": -1.204,
+    "career_stats": {
+      "total_matches": 332,
+      "wins": 221,
+      "win_pct": 0.6657,
+      "best_rank_points": 3285
+    },
+    "serve_profile": {
+      "first_serve_pct": 0.6193,
+      "first_serve_win_pct": 0.75,
+      "second_serve_win_pct": 0.533,
+      "ace_rate": 0.0838,
+      "df_rate": 0.039,
+      "bp_save_pct": 0.6321
+    },
+    "overall_profile": {
+      "service_pts_won_pct": 0.6664,
+      "return_pts_won_pct": 0.3686,
+      "dominance_ratio": 1.9203
+    },
+    "strengths": [
+      {
+        "metric": "Break Point Save %",
+        "diff": "+5.6%"
+      },
+      {
+        "metric": "1st Serve Win %",
+        "diff": "+4.8%"
+      },
+      {
+        "metric": "Service Pts Won %",
+        "diff": "+4.4%"
+      }
+    ],
+    "weaknesses": [
+      {
+        "metric": "Return Pts Won %",
+        "diff": "1.1%"
+      },
+      {
+        "metric": "1st Serve %",
+        "diff": "0.8%"
+      },
+      {
+        "metric": "Double Fault Rate",
+        "diff": "-0.1%"
+      }
+    ],
+    "surface_splits": {
+      "hard": {
+        "matches": 172,
+        "wins": 108,
+        "win_pct": 0.6279
+      },
+      "clay": {
+        "matches": 117,
+        "wins": 84,
+        "win_pct": 0.7179
+      },
+      "grass": {
+        "matches": 29,
+        "wins": 19,
+        "win_pct": 0.6552
+      }
+    },
+    "mcp_tactical_profile": {
+      "mcp_data_exists": true,
+      "deuce_win_pct": 0.6361904761904762,
+      "rally_win_pcts": {
+        "1-3": 0.5046728971962616,
+        "4-6": 0.4894613583138173,
+        "7-9": 0.5,
+        "10": 0.5234375
+      },
+      "serve_directions": {
+        "deuce_wide_pct": 0.4247787610619469,
+        "deuce_t_pct": 0.38097345132743365,
+        "ad_wide_pct": 0.5300733496332518,
+        "ad_t_pct": 0.33398533007334963
+      }
+    },
+    "top_shots": [
+      {
+        "shot_name": "Forehand Inside-In",
+        "win_pct": 0.6354166666666666,
+        "shots": 384,
+        "winner_pct": 0.2604166666666667
+      },
+      {
+        "shot_name": "Forehand Inside-Out",
+        "win_pct": 0.5849615156897573,
+        "shots": 1689,
+        "winner_pct": 0.13321492007104796
+      },
+      {
+        "shot_name": "Backhand Inside-Out",
+        "win_pct": 0.5588235294117647,
+        "shots": 102,
+        "winner_pct": 0.2549019607843137
+      }
+    ],
+    "top_combos": [
+      {
+        "serve_plus_1": "Wide Serve + Forehand",
+        "win_pct": 0.7083333333333334,
+        "pts_played": 24
+      },
+      {
+        "serve_plus_1": "T Serve + Forehand",
+        "win_pct": 0.6818181818181818,
+        "pts_played": 22
+      }
+    ]
+  }
+]

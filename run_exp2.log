@@ -1,0 +1,704 @@
+Device: mps
+Time budget: 300s
+Model type: mtl_lstm
+Key-point weight: 2.0x
+
+--- Data Loading ---
+Loading Grand Slam PBP data...
+  2011-ausopen-points.csv                       →  31,523 points  (year=2011)
+  2011-frenchopen-points.csv                    →  34,340 points  (year=2011)
+  2011-usopen-points.csv                        →  27,309 points  (year=2011)
+  2011-wimbledon-points.csv                     →  21,368 points  (year=2011)
+  2012-ausopen-points.csv                       →  29,001 points  (year=2012)
+  2012-frenchopen-points.csv                    →  31,184 points  (year=2012)
+  2012-usopen-points.csv                        →  30,975 points  (year=2012)
+  2012-wimbledon-points.csv                     →  25,920 points  (year=2012)
+  2013-ausopen-points.csv                       →  31,688 points  (year=2013)
+  2013-frenchopen-points.csv                    →  33,248 points  (year=2013)
+  2013-usopen-points.csv                        →  30,353 points  (year=2013)
+  2013-wimbledon-points.csv                     →  25,691 points  (year=2013)
+  2014-ausopen-points.csv                       →  27,659 points  (year=2014)
+  2014-frenchopen-points.csv                    →  44,426 points  (year=2014)
+  2014-usopen-points.csv                        →  33,159 points  (year=2014)
+  2014-wimbledon-points.csv                     →  47,619 points  (year=2014)
+  2015-ausopen-points.csv                       →  38,309 points  (year=2015)
+  2015-frenchopen-points.csv                    →  37,208 points  (year=2015)
+  2015-usopen-points.csv                        →  31,442 points  (year=2015)
+  2015-wimbledon-points.csv                     →  46,819 points  (year=2015)
+  2016-ausopen-points.csv                       →  41,312 points  (year=2016)
+  2016-frenchopen-points.csv                    →  32,165 points  (year=2016)
+  2016-usopen-points.csv                        →  30,606 points  (year=2016)
+  2016-wimbledon-points.csv                     →  29,102 points  (year=2016)
+  2017-ausopen-points.csv                       →  43,933 points  (year=2017)
+  2017-frenchopen-points.csv                    →  43,122 points  (year=2017)
+  2017-usopen-points.csv                        →  30,067 points  (year=2017)
+  2017-wimbledon-points.csv                     →  45,774 points  (year=2017)
+  2018-ausopen-points.csv                       →  47,540 points  (year=2018)
+  2018-frenchopen-points.csv                    →  45,529 points  (year=2018)
+  2018-usopen-points.csv                        →  31,851 points  (year=2018)
+  2018-wimbledon-points.csv                     →  49,281 points  (year=2018)
+  2019-ausopen-points.csv                       →  46,663 points  (year=2019)
+  2019-frenchopen-points.csv                    →  46,185 points  (year=2019)
+  2019-usopen-points.csv                        →  47,893 points  (year=2019)
+  2019-wimbledon-points.csv                     →  47,045 points  (year=2019)
+  2020-ausopen-points.csv                       →  46,530 points  (year=2020)
+  2020-frenchopen-points.csv                    →  46,273 points  (year=2020)
+  2020-usopen-points.csv                        →  45,157 points  (year=2020)
+  2021-ausopen-points.csv                       →  44,412 points  (year=2021)
+  2021-frenchopen-points.csv                    →  46,313 points  (year=2021)
+  2021-usopen-points.csv                        →  47,867 points  (year=2021)
+  2021-wimbledon-points.csv                     →  47,106 points  (year=2021)
+  2022-usopen-points.csv                        →  47,243 points  (year=2022)
+  2022-wimbledon-points.csv                     →  46,361 points  (year=2022)
+  2023-usopen-points.csv                        →  45,445 points  (year=2023)
+  2023-wimbledon-points.csv                     →  48,676 points  (year=2023)
+  2024-usopen-points.csv                        →  45,289 points  (year=2024)
+  2024-wimbledon-points.csv                     →  48,155 points  (year=2024)
+  train: 1,734,571 points
+  val  :    94,121 points
+  test :    93,444 points
+
+Engineering features...
+  Train features: (1725367, 29)
+  Val features:   (93103, 29)
+  Test features:  (92427, 29)
+  Feature count:  29
+  Features: ['PointServer_num', 'ServeNumber_num', 'P1Score_num', 'P2Score_num', 'ScoreDiff', 'SetNo_num', 'P1GamesWon_num', 'P2GamesWon_num', 'GameDiff', 'P1Momentum_num', 'P2Momentum_num', 'MomentumDiff', 'P1PointsWon_num', 'P2PointsWon_num', 'PointsWonDiff', 'RallyCount_num', 'Speed_KMH_num', 'P1BreakPoint_num', 'P2BreakPoint_num', 'IsBreakPoint', 'P1Distance_num', 'P2Distance_num', 'ServeDir_enc', 'ServeWidth_enc', 'ServeDepth_enc', 'ReturnDepth_enc', 'ScorePressure', 'IsTiebreak', 'ServerAhead']
+  Train key points: 609,554 (35.3%)
+
+Input dimension: 29
+Features: ['PointServer_num', 'ServeNumber_num', 'P1Score_num', 'P2Score_num', 'ScoreDiff', 'SetNo_num', 'P1GamesWon_num', 'P2GamesWon_num', 'GameDiff', 'P1Momentum_num', 'P2Momentum_num', 'MomentumDiff', 'P1PointsWon_num', 'P2PointsWon_num', 'PointsWonDiff', 'RallyCount_num', 'Speed_KMH_num', 'P1BreakPoint_num', 'P2BreakPoint_num', 'IsBreakPoint', 'P1Distance_num', 'P2Distance_num', 'ServeDir_enc', 'ServeWidth_enc', 'ServeDepth_enc', 'ReturnDepth_enc', 'ScorePressure', 'IsTiebreak', 'ServerAhead']
+Train batches: 13479
+Val batches: 728
+Key pts in train seqs: 609,552 / 1,725,357 (35.3%)
+
+--- Model ---
+Model parameters: 62,086
+
+--- Training ---
+
+step 00100 (0.2%) | loss: 1.709965 | lr: 0.000040 | dt: 9ms | epoch: 1 | remaining: 299s    
+step 00200 (0.5%) | loss: 1.550474 | lr: 0.000041 | dt: 9ms | epoch: 1 | remaining: 299s    
+step 00300 (0.7%) | loss: 1.417685 | lr: 0.000043 | dt: 9ms | epoch: 1 | remaining: 298s    
+step 00400 (1.0%) | loss: 1.294866 | lr: 0.000046 | dt: 9ms | epoch: 1 | remaining: 297s    
+step 00500 (1.2%) | loss: 1.256079 | lr: 0.000049 | dt: 9ms | epoch: 1 | remaining: 296s    
+step 00600 (1.5%) | loss: 1.226892 | lr: 0.000053 | dt: 10ms | epoch: 1 | remaining: 296s    
+step 00700 (1.7%) | loss: 1.202819 | lr: 0.000058 | dt: 9ms | epoch: 1 | remaining: 295s    
+step 00800 (2.0%) | loss: 1.193758 | lr: 0.000063 | dt: 9ms | epoch: 1 | remaining: 294s    
+step 00900 (2.2%) | loss: 1.185262 | lr: 0.000069 | dt: 6ms | epoch: 1 | remaining: 293s    
+step 01000 (2.5%) | loss: 1.172468 | lr: 0.000076 | dt: 6ms | epoch: 1 | remaining: 293s    
+step 01100 (2.7%) | loss: 1.167578 | lr: 0.000083 | dt: 6ms | epoch: 1 | remaining: 292s    
+step 01200 (3.0%) | loss: 1.161370 | lr: 0.000091 | dt: 6ms | epoch: 1 | remaining: 291s    
+step 01300 (3.2%) | loss: 1.160706 | lr: 0.000100 | dt: 6ms | epoch: 1 | remaining: 290s    
+step 01400 (3.5%) | loss: 1.147724 | lr: 0.000109 | dt: 6ms | epoch: 1 | remaining: 290s    
+step 01500 (3.7%) | loss: 1.152136 | lr: 0.000119 | dt: 6ms | epoch: 1 | remaining: 289s    
+step 01600 (4.0%) | loss: 1.157457 | lr: 0.000130 | dt: 6ms | epoch: 1 | remaining: 288s    
+step 01700 (4.2%) | loss: 1.145136 | lr: 0.000141 | dt: 6ms | epoch: 1 | remaining: 287s    
+step 01800 (4.5%) | loss: 1.136058 | lr: 0.000153 | dt: 6ms | epoch: 1 | remaining: 287s    
+step 01900 (4.8%) | loss: 1.142091 | lr: 0.000165 | dt: 6ms | epoch: 1 | remaining: 286s    
+step 02000 (5.0%) | loss: 1.140821 | lr: 0.000178 | dt: 10ms | epoch: 1 | remaining: 285s    
+step 02100 (5.3%) | loss: 1.137446 | lr: 0.000191 | dt: 9ms | epoch: 1 | remaining: 284s    
+step 02200 (5.5%) | loss: 1.138156 | lr: 0.000205 | dt: 9ms | epoch: 1 | remaining: 283s    
+step 02300 (5.8%) | loss: 1.142173 | lr: 0.000219 | dt: 6ms | epoch: 1 | remaining: 283s    
+step 02400 (6.0%) | loss: 1.139819 | lr: 0.000234 | dt: 6ms | epoch: 1 | remaining: 282s    
+step 02500 (6.3%) | loss: 1.139965 | lr: 0.000249 | dt: 6ms | epoch: 1 | remaining: 281s    
+step 02600 (6.5%) | loss: 1.140817 | lr: 0.000265 | dt: 6ms | epoch: 1 | remaining: 280s    
+step 02700 (6.8%) | loss: 1.137409 | lr: 0.000281 | dt: 6ms | epoch: 1 | remaining: 280s    
+step 02800 (7.0%) | loss: 1.129353 | lr: 0.000297 | dt: 6ms | epoch: 1 | remaining: 279s    
+step 02900 (7.3%) | loss: 1.147843 | lr: 0.000314 | dt: 6ms | epoch: 1 | remaining: 278s    
+step 03000 (7.6%) | loss: 1.121766 | lr: 0.000331 | dt: 6ms | epoch: 1 | remaining: 277s    
+step 03100 (7.8%) | loss: 1.104577 | lr: 0.000348 | dt: 6ms | epoch: 1 | remaining: 277s    
+step 03200 (8.1%) | loss: 1.130944 | lr: 0.000366 | dt: 9ms | epoch: 1 | remaining: 276s    
+step 03300 (8.3%) | loss: 1.124499 | lr: 0.000383 | dt: 10ms | epoch: 1 | remaining: 275s    
+step 03400 (8.6%) | loss: 1.107634 | lr: 0.000401 | dt: 9ms | epoch: 1 | remaining: 274s    
+step 03500 (8.8%) | loss: 1.130896 | lr: 0.000419 | dt: 8ms | epoch: 1 | remaining: 274s    
+step 03600 (9.1%) | loss: 1.115669 | lr: 0.000438 | dt: 9ms | epoch: 1 | remaining: 273s    
+step 03700 (9.3%) | loss: 1.109737 | lr: 0.000456 | dt: 10ms | epoch: 1 | remaining: 272s    
+step 03800 (9.6%) | loss: 1.108320 | lr: 0.000475 | dt: 10ms | epoch: 1 | remaining: 271s    
+step 03900 (9.8%) | loss: 1.113784 | lr: 0.000493 | dt: 6ms | epoch: 1 | remaining: 270s    
+step 04000 (10.1%) | loss: 1.112217 | lr: 0.000512 | dt: 6ms | epoch: 1 | remaining: 270s    
+step 04100 (10.4%) | loss: 1.115170 | lr: 0.000531 | dt: 6ms | epoch: 1 | remaining: 269s    
+step 04200 (10.6%) | loss: 1.108804 | lr: 0.000549 | dt: 6ms | epoch: 1 | remaining: 268s    
+step 04300 (10.9%) | loss: 1.106536 | lr: 0.000568 | dt: 6ms | epoch: 1 | remaining: 267s    
+step 04400 (11.1%) | loss: 1.109234 | lr: 0.000586 | dt: 6ms | epoch: 1 | remaining: 267s    
+step 04500 (11.4%) | loss: 1.107815 | lr: 0.000605 | dt: 10ms | epoch: 1 | remaining: 266s    
+step 04600 (11.6%) | loss: 1.107543 | lr: 0.000623 | dt: 10ms | epoch: 1 | remaining: 265s    
+step 04700 (11.9%) | loss: 1.107308 | lr: 0.000641 | dt: 9ms | epoch: 1 | remaining: 264s    
+step 04800 (12.1%) | loss: 1.116353 | lr: 0.000659 | dt: 10ms | epoch: 1 | remaining: 264s    
+step 04900 (12.4%) | loss: 1.095836 | lr: 0.000677 | dt: 10ms | epoch: 1 | remaining: 263s    
+step 05000 (12.6%) | loss: 1.112648 | lr: 0.000694 | dt: 10ms | epoch: 1 | remaining: 262s    
+step 05100 (12.9%) | loss: 1.121842 | lr: 0.000712 | dt: 10ms | epoch: 1 | remaining: 261s    
+step 05200 (13.2%) | loss: 1.122336 | lr: 0.000729 | dt: 10ms | epoch: 1 | remaining: 261s    
+step 05300 (13.4%) | loss: 1.111952 | lr: 0.000745 | dt: 10ms | epoch: 1 | remaining: 260s    
+step 05400 (13.7%) | loss: 1.101229 | lr: 0.000761 | dt: 9ms | epoch: 1 | remaining: 259s    
+step 05500 (13.9%) | loss: 1.108973 | lr: 0.000777 | dt: 10ms | epoch: 1 | remaining: 258s    
+step 05600 (14.2%) | loss: 1.105498 | lr: 0.000793 | dt: 6ms | epoch: 1 | remaining: 257s    
+step 05700 (14.4%) | loss: 1.114641 | lr: 0.000808 | dt: 6ms | epoch: 1 | remaining: 257s    
+step 05800 (14.7%) | loss: 1.099900 | lr: 0.000823 | dt: 6ms | epoch: 1 | remaining: 256s    
+step 05900 (14.9%) | loss: 1.111863 | lr: 0.000837 | dt: 6ms | epoch: 1 | remaining: 255s    
+step 06000 (15.2%) | loss: 1.092929 | lr: 0.000851 | dt: 6ms | epoch: 1 | remaining: 254s    
+step 06100 (15.4%) | loss: 1.107317 | lr: 0.000864 | dt: 6ms | epoch: 1 | remaining: 254s    
+step 06200 (15.7%) | loss: 1.111538 | lr: 0.000877 | dt: 6ms | epoch: 1 | remaining: 253s    
+step 06300 (16.0%) | loss: 1.105948 | lr: 0.000889 | dt: 6ms | epoch: 1 | remaining: 252s    
+step 06400 (16.2%) | loss: 1.117658 | lr: 0.000901 | dt: 6ms | epoch: 1 | remaining: 251s    
+step 06500 (16.5%) | loss: 1.109594 | lr: 0.000912 | dt: 6ms | epoch: 1 | remaining: 251s    
+step 06600 (16.7%) | loss: 1.119547 | lr: 0.000922 | dt: 6ms | epoch: 1 | remaining: 250s    
+step 06700 (17.0%) | loss: 1.102762 | lr: 0.000932 | dt: 6ms | epoch: 1 | remaining: 249s    
+step 06800 (17.2%) | loss: 1.106028 | lr: 0.000941 | dt: 6ms | epoch: 1 | remaining: 248s    
+step 06900 (17.5%) | loss: 1.118771 | lr: 0.000950 | dt: 6ms | epoch: 1 | remaining: 248s    
+step 07000 (17.7%) | loss: 1.108099 | lr: 0.000958 | dt: 6ms | epoch: 1 | remaining: 247s    
+step 07100 (17.9%) | loss: 1.109842 | lr: 0.000965 | dt: 6ms | epoch: 1 | remaining: 246s    
+step 07200 (18.1%) | loss: 1.098184 | lr: 0.000972 | dt: 6ms | epoch: 1 | remaining: 246s    
+step 07300 (18.3%) | loss: 1.104422 | lr: 0.000978 | dt: 6ms | epoch: 1 | remaining: 245s    
+step 07400 (18.5%) | loss: 1.099606 | lr: 0.000983 | dt: 6ms | epoch: 1 | remaining: 245s    
+step 07500 (18.7%) | loss: 1.101902 | lr: 0.000988 | dt: 7ms | epoch: 1 | remaining: 244s    
+step 07600 (18.9%) | loss: 1.106348 | lr: 0.000991 | dt: 5ms | epoch: 1 | remaining: 243s    
+step 07700 (19.1%) | loss: 1.112714 | lr: 0.000995 | dt: 7ms | epoch: 1 | remaining: 243s    
+step 07800 (19.3%) | loss: 1.106825 | lr: 0.000997 | dt: 6ms | epoch: 1 | remaining: 242s    
+step 07900 (19.5%) | loss: 1.101985 | lr: 0.000999 | dt: 6ms | epoch: 1 | remaining: 241s    
+step 08000 (19.7%) | loss: 1.105866 | lr: 0.001000 | dt: 6ms | epoch: 1 | remaining: 241s    
+step 08100 (19.9%) | loss: 1.096492 | lr: 0.001000 | dt: 10ms | epoch: 1 | remaining: 240s    
+step 08200 (20.2%) | loss: 1.089816 | lr: 0.001000 | dt: 6ms | epoch: 1 | remaining: 239s    
+step 08300 (20.4%) | loss: 1.102999 | lr: 0.001000 | dt: 9ms | epoch: 1 | remaining: 239s    
+step 08400 (20.7%) | loss: 1.110480 | lr: 0.001000 | dt: 6ms | epoch: 1 | remaining: 238s    
+step 08500 (20.9%) | loss: 1.110072 | lr: 0.001000 | dt: 5ms | epoch: 1 | remaining: 237s    
+step 08600 (21.2%) | loss: 1.095428 | lr: 0.001000 | dt: 6ms | epoch: 1 | remaining: 236s    
+step 08700 (21.4%) | loss: 1.108249 | lr: 0.001000 | dt: 10ms | epoch: 1 | remaining: 236s    
+step 08800 (21.7%) | loss: 1.093956 | lr: 0.001000 | dt: 9ms | epoch: 1 | remaining: 235s    
+step 08900 (21.9%) | loss: 1.114426 | lr: 0.001000 | dt: 6ms | epoch: 1 | remaining: 234s    
+step 09000 (22.2%) | loss: 1.099820 | lr: 0.001000 | dt: 10ms | epoch: 1 | remaining: 233s    
+step 09100 (22.4%) | loss: 1.106087 | lr: 0.001000 | dt: 6ms | epoch: 1 | remaining: 233s    
+step 09200 (22.7%) | loss: 1.105362 | lr: 0.000999 | dt: 10ms | epoch: 1 | remaining: 232s    
+step 09300 (22.9%) | loss: 1.093076 | lr: 0.000999 | dt: 6ms | epoch: 1 | remaining: 231s    
+step 09400 (23.2%) | loss: 1.104668 | lr: 0.000999 | dt: 10ms | epoch: 1 | remaining: 230s    
+step 09500 (23.5%) | loss: 1.098510 | lr: 0.000999 | dt: 10ms | epoch: 1 | remaining: 230s    
+step 09600 (23.7%) | loss: 1.103112 | lr: 0.000999 | dt: 9ms | epoch: 1 | remaining: 229s    
+step 09700 (24.0%) | loss: 1.097653 | lr: 0.000999 | dt: 9ms | epoch: 1 | remaining: 228s    
+step 09800 (24.2%) | loss: 1.106388 | lr: 0.000999 | dt: 6ms | epoch: 1 | remaining: 227s    
+step 09900 (24.5%) | loss: 1.103522 | lr: 0.000998 | dt: 6ms | epoch: 1 | remaining: 227s    
+step 10000 (24.7%) | loss: 1.086251 | lr: 0.000998 | dt: 10ms | epoch: 1 | remaining: 226s    
+step 10100 (25.0%) | loss: 1.089571 | lr: 0.000998 | dt: 6ms | epoch: 1 | remaining: 225s    
+step 10200 (25.2%) | loss: 1.085122 | lr: 0.000998 | dt: 7ms | epoch: 1 | remaining: 224s    
+step 10300 (25.5%) | loss: 1.099674 | lr: 0.000998 | dt: 9ms | epoch: 1 | remaining: 224s    
+step 10400 (25.7%) | loss: 1.087791 | lr: 0.000998 | dt: 10ms | epoch: 1 | remaining: 223s    
+step 10500 (26.0%) | loss: 1.092048 | lr: 0.000997 | dt: 10ms | epoch: 1 | remaining: 222s    
+step 10600 (26.3%) | loss: 1.104357 | lr: 0.000997 | dt: 10ms | epoch: 1 | remaining: 221s    
+step 10700 (26.5%) | loss: 1.099963 | lr: 0.000997 | dt: 9ms | epoch: 1 | remaining: 220s    
+step 10800 (26.8%) | loss: 1.101814 | lr: 0.000997 | dt: 6ms | epoch: 1 | remaining: 220s    
+step 10900 (27.0%) | loss: 1.110570 | lr: 0.000996 | dt: 6ms | epoch: 1 | remaining: 219s    
+step 11000 (27.3%) | loss: 1.103869 | lr: 0.000996 | dt: 10ms | epoch: 1 | remaining: 218s    
+step 11100 (27.5%) | loss: 1.104262 | lr: 0.000996 | dt: 10ms | epoch: 1 | remaining: 217s    
+step 11200 (27.8%) | loss: 1.081553 | lr: 0.000995 | dt: 10ms | epoch: 1 | remaining: 217s    
+step 11300 (28.0%) | loss: 1.097233 | lr: 0.000995 | dt: 10ms | epoch: 1 | remaining: 216s    
+step 11400 (28.3%) | loss: 1.087882 | lr: 0.000995 | dt: 10ms | epoch: 1 | remaining: 215s    
+step 11500 (28.5%) | loss: 1.106430 | lr: 0.000995 | dt: 10ms | epoch: 1 | remaining: 214s    
+step 11600 (28.8%) | loss: 1.104907 | lr: 0.000994 | dt: 9ms | epoch: 1 | remaining: 214s    
+step 11700 (29.1%) | loss: 1.111903 | lr: 0.000994 | dt: 10ms | epoch: 1 | remaining: 213s    
+step 11800 (29.3%) | loss: 1.116640 | lr: 0.000994 | dt: 9ms | epoch: 1 | remaining: 212s    
+step 11900 (29.6%) | loss: 1.107287 | lr: 0.000993 | dt: 6ms | epoch: 1 | remaining: 211s    
+step 12000 (29.8%) | loss: 1.107377 | lr: 0.000993 | dt: 10ms | epoch: 1 | remaining: 211s    
+step 12100 (30.1%) | loss: 1.104998 | lr: 0.000993 | dt: 7ms | epoch: 1 | remaining: 210s    
+step 12200 (30.3%) | loss: 1.105088 | lr: 0.000992 | dt: 6ms | epoch: 1 | remaining: 209s    
+step 12300 (30.5%) | loss: 1.101879 | lr: 0.000992 | dt: 6ms | epoch: 1 | remaining: 209s    
+step 12400 (30.7%) | loss: 1.109235 | lr: 0.000991 | dt: 6ms | epoch: 1 | remaining: 208s    
+step 12500 (30.9%) | loss: 1.097763 | lr: 0.000991 | dt: 11ms | epoch: 1 | remaining: 207s    
+step 12600 (31.1%) | loss: 1.099031 | lr: 0.000991 | dt: 6ms | epoch: 1 | remaining: 207s    
+step 12700 (31.3%) | loss: 1.107506 | lr: 0.000990 | dt: 8ms | epoch: 1 | remaining: 206s    
+step 12800 (31.5%) | loss: 1.091845 | lr: 0.000990 | dt: 6ms | epoch: 1 | remaining: 205s    
+step 12900 (31.7%) | loss: 1.093466 | lr: 0.000989 | dt: 6ms | epoch: 1 | remaining: 205s    
+step 13000 (31.9%) | loss: 1.095107 | lr: 0.000989 | dt: 6ms | epoch: 1 | remaining: 204s    
+step 13100 (32.1%) | loss: 1.102058 | lr: 0.000988 | dt: 6ms | epoch: 1 | remaining: 204s    
+step 13200 (32.3%) | loss: 1.113921 | lr: 0.000988 | dt: 6ms | epoch: 1 | remaining: 203s    
+step 13300 (32.5%) | loss: 1.101111 | lr: 0.000987 | dt: 6ms | epoch: 1 | remaining: 203s    
+step 13400 (32.7%) | loss: 1.104058 | lr: 0.000987 | dt: 6ms | epoch: 1 | remaining: 202s    
+  Epoch 1 done | avg_loss: 1.128512 | val_acc: 0.5626 | best: 0.5626
+
+step 13500 (33.0%) | loss: 1.107080 | lr: 0.000986 | dt: 9ms | epoch: 2 | remaining: 201s    
+step 13600 (33.3%) | loss: 1.090279 | lr: 0.000986 | dt: 6ms | epoch: 2 | remaining: 200s    
+step 13700 (33.5%) | loss: 1.088249 | lr: 0.000985 | dt: 6ms | epoch: 2 | remaining: 199s    
+step 13800 (33.8%) | loss: 1.099838 | lr: 0.000985 | dt: 10ms | epoch: 2 | remaining: 199s    
+step 13900 (34.0%) | loss: 1.104109 | lr: 0.000984 | dt: 10ms | epoch: 2 | remaining: 198s    
+step 14000 (34.3%) | loss: 1.085870 | lr: 0.000984 | dt: 10ms | epoch: 2 | remaining: 197s    
+step 14100 (34.5%) | loss: 1.101985 | lr: 0.000983 | dt: 10ms | epoch: 2 | remaining: 196s    
+step 14200 (34.8%) | loss: 1.099475 | lr: 0.000983 | dt: 9ms | epoch: 2 | remaining: 196s    
+step 14300 (35.0%) | loss: 1.100787 | lr: 0.000982 | dt: 6ms | epoch: 2 | remaining: 195s    
+step 14400 (35.3%) | loss: 1.110615 | lr: 0.000982 | dt: 6ms | epoch: 2 | remaining: 194s    
+step 14500 (35.6%) | loss: 1.094199 | lr: 0.000981 | dt: 10ms | epoch: 2 | remaining: 193s    
+step 14600 (35.8%) | loss: 1.108170 | lr: 0.000980 | dt: 10ms | epoch: 2 | remaining: 193s    
+step 14700 (36.1%) | loss: 1.101511 | lr: 0.000980 | dt: 6ms | epoch: 2 | remaining: 192s    
+step 14800 (36.3%) | loss: 1.097529 | lr: 0.000979 | dt: 6ms | epoch: 2 | remaining: 191s    
+step 14900 (36.6%) | loss: 1.104406 | lr: 0.000979 | dt: 6ms | epoch: 2 | remaining: 190s    
+step 15000 (36.8%) | loss: 1.101893 | lr: 0.000978 | dt: 10ms | epoch: 2 | remaining: 190s    
+step 15100 (37.1%) | loss: 1.096915 | lr: 0.000977 | dt: 10ms | epoch: 2 | remaining: 189s    
+step 15200 (37.3%) | loss: 1.093315 | lr: 0.000977 | dt: 10ms | epoch: 2 | remaining: 188s    
+step 15300 (37.6%) | loss: 1.094682 | lr: 0.000976 | dt: 6ms | epoch: 2 | remaining: 187s    
+step 15400 (37.8%) | loss: 1.084341 | lr: 0.000975 | dt: 10ms | epoch: 2 | remaining: 186s    
+step 15500 (38.0%) | loss: 1.093912 | lr: 0.000975 | dt: 6ms | epoch: 2 | remaining: 186s    
+step 15600 (38.3%) | loss: 1.091805 | lr: 0.000974 | dt: 10ms | epoch: 2 | remaining: 185s    
+step 15700 (38.6%) | loss: 1.102351 | lr: 0.000973 | dt: 9ms | epoch: 2 | remaining: 184s    
+step 15800 (38.8%) | loss: 1.109875 | lr: 0.000973 | dt: 10ms | epoch: 2 | remaining: 184s    
+step 15900 (39.1%) | loss: 1.106666 | lr: 0.000972 | dt: 10ms | epoch: 2 | remaining: 183s    
+step 16000 (39.3%) | loss: 1.093378 | lr: 0.000971 | dt: 6ms | epoch: 2 | remaining: 182s    
+step 16100 (39.6%) | loss: 1.088664 | lr: 0.000970 | dt: 10ms | epoch: 2 | remaining: 181s    
+step 16200 (39.8%) | loss: 1.082476 | lr: 0.000970 | dt: 10ms | epoch: 2 | remaining: 181s    
+step 16300 (40.1%) | loss: 1.099592 | lr: 0.000969 | dt: 9ms | epoch: 2 | remaining: 180s    
+step 16400 (40.3%) | loss: 1.104628 | lr: 0.000968 | dt: 10ms | epoch: 2 | remaining: 179s    
+step 16500 (40.6%) | loss: 1.090855 | lr: 0.000967 | dt: 9ms | epoch: 2 | remaining: 178s    
+step 16600 (40.8%) | loss: 1.095070 | lr: 0.000967 | dt: 6ms | epoch: 2 | remaining: 177s    
+step 16700 (41.1%) | loss: 1.093698 | lr: 0.000966 | dt: 10ms | epoch: 2 | remaining: 177s    
+step 16800 (41.3%) | loss: 1.101891 | lr: 0.000965 | dt: 6ms | epoch: 2 | remaining: 176s    
+step 16900 (41.6%) | loss: 1.117796 | lr: 0.000964 | dt: 9ms | epoch: 2 | remaining: 175s    
+step 17000 (41.8%) | loss: 1.110429 | lr: 0.000963 | dt: 9ms | epoch: 2 | remaining: 174s    
+step 17100 (42.1%) | loss: 1.111366 | lr: 0.000963 | dt: 6ms | epoch: 2 | remaining: 174s    
+step 17200 (42.3%) | loss: 1.103024 | lr: 0.000962 | dt: 6ms | epoch: 2 | remaining: 173s    
+step 17300 (42.6%) | loss: 1.093809 | lr: 0.000961 | dt: 6ms | epoch: 2 | remaining: 172s    
+step 17400 (42.8%) | loss: 1.110491 | lr: 0.000960 | dt: 6ms | epoch: 2 | remaining: 172s    
+step 17500 (43.0%) | loss: 1.108515 | lr: 0.000959 | dt: 6ms | epoch: 2 | remaining: 171s    
+step 17600 (43.2%) | loss: 1.090143 | lr: 0.000958 | dt: 6ms | epoch: 2 | remaining: 171s    
+step 17700 (43.4%) | loss: 1.101844 | lr: 0.000958 | dt: 6ms | epoch: 2 | remaining: 170s    
+step 17800 (43.6%) | loss: 1.108035 | lr: 0.000957 | dt: 6ms | epoch: 2 | remaining: 169s    
+step 17900 (43.8%) | loss: 1.081342 | lr: 0.000956 | dt: 6ms | epoch: 2 | remaining: 169s    
+step 18000 (43.9%) | loss: 1.104818 | lr: 0.000955 | dt: 6ms | epoch: 2 | remaining: 168s    
+step 18100 (44.1%) | loss: 1.105006 | lr: 0.000954 | dt: 6ms | epoch: 2 | remaining: 168s    
+step 18200 (44.3%) | loss: 1.112482 | lr: 0.000953 | dt: 6ms | epoch: 2 | remaining: 167s    
+step 18300 (44.5%) | loss: 1.091787 | lr: 0.000952 | dt: 6ms | epoch: 2 | remaining: 166s    
+step 18400 (44.7%) | loss: 1.101495 | lr: 0.000951 | dt: 6ms | epoch: 2 | remaining: 166s    
+step 18500 (44.9%) | loss: 1.106157 | lr: 0.000950 | dt: 6ms | epoch: 2 | remaining: 165s    
+step 18600 (45.1%) | loss: 1.090802 | lr: 0.000949 | dt: 6ms | epoch: 2 | remaining: 165s    
+step 18700 (45.3%) | loss: 1.082923 | lr: 0.000948 | dt: 6ms | epoch: 2 | remaining: 164s    
+step 18800 (45.5%) | loss: 1.086417 | lr: 0.000947 | dt: 6ms | epoch: 2 | remaining: 164s    
+step 18900 (45.7%) | loss: 1.093465 | lr: 0.000947 | dt: 6ms | epoch: 2 | remaining: 163s    
+step 19000 (45.9%) | loss: 1.090883 | lr: 0.000946 | dt: 6ms | epoch: 2 | remaining: 162s    
+step 19100 (46.1%) | loss: 1.105344 | lr: 0.000945 | dt: 6ms | epoch: 2 | remaining: 162s    
+step 19200 (46.3%) | loss: 1.093715 | lr: 0.000944 | dt: 6ms | epoch: 2 | remaining: 161s    
+step 19300 (46.4%) | loss: 1.098560 | lr: 0.000943 | dt: 6ms | epoch: 2 | remaining: 161s    
+step 19400 (46.6%) | loss: 1.099083 | lr: 0.000942 | dt: 6ms | epoch: 2 | remaining: 160s    
+step 19500 (46.8%) | loss: 1.093206 | lr: 0.000941 | dt: 6ms | epoch: 2 | remaining: 160s    
+step 19600 (47.0%) | loss: 1.101527 | lr: 0.000940 | dt: 6ms | epoch: 2 | remaining: 159s    
+step 19700 (47.2%) | loss: 1.098748 | lr: 0.000938 | dt: 6ms | epoch: 2 | remaining: 158s    
+step 19800 (47.4%) | loss: 1.101793 | lr: 0.000937 | dt: 6ms | epoch: 2 | remaining: 158s    
+step 19900 (47.6%) | loss: 1.099948 | lr: 0.000936 | dt: 6ms | epoch: 2 | remaining: 157s    
+step 20000 (47.8%) | loss: 1.101619 | lr: 0.000935 | dt: 6ms | epoch: 2 | remaining: 157s    
+step 20100 (48.0%) | loss: 1.106350 | lr: 0.000934 | dt: 6ms | epoch: 2 | remaining: 156s    
+step 20200 (48.2%) | loss: 1.088449 | lr: 0.000933 | dt: 6ms | epoch: 2 | remaining: 155s    
+step 20300 (48.4%) | loss: 1.099602 | lr: 0.000932 | dt: 6ms | epoch: 2 | remaining: 155s    
+step 20400 (48.6%) | loss: 1.092631 | lr: 0.000931 | dt: 6ms | epoch: 2 | remaining: 154s    
+step 20500 (48.8%) | loss: 1.108509 | lr: 0.000930 | dt: 6ms | epoch: 2 | remaining: 154s    
+step 20600 (49.0%) | loss: 1.101308 | lr: 0.000929 | dt: 6ms | epoch: 2 | remaining: 153s    
+step 20700 (49.2%) | loss: 1.106702 | lr: 0.000928 | dt: 6ms | epoch: 2 | remaining: 153s    
+step 20800 (49.3%) | loss: 1.101741 | lr: 0.000927 | dt: 6ms | epoch: 2 | remaining: 152s    
+step 20900 (49.5%) | loss: 1.107693 | lr: 0.000925 | dt: 6ms | epoch: 2 | remaining: 151s    
+step 21000 (49.7%) | loss: 1.112394 | lr: 0.000924 | dt: 6ms | epoch: 2 | remaining: 151s    
+step 21100 (49.9%) | loss: 1.097061 | lr: 0.000923 | dt: 6ms | epoch: 2 | remaining: 150s    
+step 21200 (50.1%) | loss: 1.079606 | lr: 0.000922 | dt: 6ms | epoch: 2 | remaining: 150s    
+step 21300 (50.3%) | loss: 1.095517 | lr: 0.000921 | dt: 6ms | epoch: 2 | remaining: 149s    
+step 21400 (50.5%) | loss: 1.094599 | lr: 0.000920 | dt: 6ms | epoch: 2 | remaining: 148s    
+step 21500 (50.7%) | loss: 1.082718 | lr: 0.000919 | dt: 6ms | epoch: 2 | remaining: 148s    
+step 21600 (50.9%) | loss: 1.100660 | lr: 0.000917 | dt: 6ms | epoch: 2 | remaining: 147s    
+step 21700 (51.1%) | loss: 1.094785 | lr: 0.000916 | dt: 6ms | epoch: 2 | remaining: 147s    
+step 21800 (51.3%) | loss: 1.076030 | lr: 0.000915 | dt: 6ms | epoch: 2 | remaining: 146s    
+step 21900 (51.5%) | loss: 1.100216 | lr: 0.000914 | dt: 6ms | epoch: 2 | remaining: 146s    
+step 22000 (51.7%) | loss: 1.070746 | lr: 0.000913 | dt: 6ms | epoch: 2 | remaining: 145s    
+step 22100 (51.8%) | loss: 1.099240 | lr: 0.000911 | dt: 6ms | epoch: 2 | remaining: 144s    
+step 22200 (52.0%) | loss: 1.096491 | lr: 0.000910 | dt: 6ms | epoch: 2 | remaining: 144s    
+step 22300 (52.2%) | loss: 1.099125 | lr: 0.000909 | dt: 6ms | epoch: 2 | remaining: 143s    
+step 22400 (52.4%) | loss: 1.091314 | lr: 0.000908 | dt: 6ms | epoch: 2 | remaining: 143s    
+step 22500 (52.6%) | loss: 1.086653 | lr: 0.000906 | dt: 6ms | epoch: 2 | remaining: 142s    
+step 22600 (52.8%) | loss: 1.095681 | lr: 0.000905 | dt: 6ms | epoch: 2 | remaining: 142s    
+step 22700 (53.0%) | loss: 1.105819 | lr: 0.000904 | dt: 6ms | epoch: 2 | remaining: 141s    
+step 22800 (53.2%) | loss: 1.091174 | lr: 0.000903 | dt: 6ms | epoch: 2 | remaining: 140s    
+step 22900 (53.4%) | loss: 1.103101 | lr: 0.000901 | dt: 6ms | epoch: 2 | remaining: 140s    
+step 23000 (53.6%) | loss: 1.105085 | lr: 0.000900 | dt: 6ms | epoch: 2 | remaining: 139s    
+step 23100 (53.8%) | loss: 1.100203 | lr: 0.000899 | dt: 6ms | epoch: 2 | remaining: 139s    
+step 23200 (54.0%) | loss: 1.099780 | lr: 0.000897 | dt: 6ms | epoch: 2 | remaining: 138s    
+step 23300 (54.1%) | loss: 1.089130 | lr: 0.000896 | dt: 6ms | epoch: 2 | remaining: 138s    
+step 23400 (54.3%) | loss: 1.097106 | lr: 0.000895 | dt: 6ms | epoch: 2 | remaining: 137s    
+step 23500 (54.5%) | loss: 1.116492 | lr: 0.000893 | dt: 6ms | epoch: 2 | remaining: 136s    
+step 23600 (54.7%) | loss: 1.094387 | lr: 0.000892 | dt: 6ms | epoch: 2 | remaining: 136s    
+step 23700 (54.9%) | loss: 1.095737 | lr: 0.000891 | dt: 6ms | epoch: 2 | remaining: 135s    
+step 23800 (55.1%) | loss: 1.084432 | lr: 0.000889 | dt: 6ms | epoch: 2 | remaining: 135s    
+step 23900 (55.3%) | loss: 1.090713 | lr: 0.000888 | dt: 6ms | epoch: 2 | remaining: 134s    
+step 24000 (55.5%) | loss: 1.100491 | lr: 0.000887 | dt: 6ms | epoch: 2 | remaining: 134s    
+step 24100 (55.7%) | loss: 1.102478 | lr: 0.000885 | dt: 6ms | epoch: 2 | remaining: 133s    
+step 24200 (55.9%) | loss: 1.109726 | lr: 0.000884 | dt: 6ms | epoch: 2 | remaining: 132s    
+step 24300 (56.1%) | loss: 1.095697 | lr: 0.000882 | dt: 6ms | epoch: 2 | remaining: 132s    
+step 24400 (56.2%) | loss: 1.086008 | lr: 0.000881 | dt: 6ms | epoch: 2 | remaining: 131s    
+step 24500 (56.4%) | loss: 1.099462 | lr: 0.000880 | dt: 6ms | epoch: 2 | remaining: 131s    
+step 24600 (56.6%) | loss: 1.105269 | lr: 0.000878 | dt: 6ms | epoch: 2 | remaining: 130s    
+step 24700 (56.8%) | loss: 1.105879 | lr: 0.000877 | dt: 6ms | epoch: 2 | remaining: 130s    
+step 24800 (57.0%) | loss: 1.083009 | lr: 0.000875 | dt: 6ms | epoch: 2 | remaining: 129s    
+step 24900 (57.2%) | loss: 1.091835 | lr: 0.000874 | dt: 6ms | epoch: 2 | remaining: 128s    
+step 25000 (57.4%) | loss: 1.108528 | lr: 0.000873 | dt: 9ms | epoch: 2 | remaining: 128s    
+step 25100 (57.6%) | loss: 1.095211 | lr: 0.000871 | dt: 6ms | epoch: 2 | remaining: 127s    
+step 25200 (57.8%) | loss: 1.093740 | lr: 0.000870 | dt: 6ms | epoch: 2 | remaining: 126s    
+step 25300 (58.0%) | loss: 1.102709 | lr: 0.000868 | dt: 6ms | epoch: 2 | remaining: 126s    
+step 25400 (58.2%) | loss: 1.091590 | lr: 0.000867 | dt: 6ms | epoch: 2 | remaining: 125s    
+step 25500 (58.4%) | loss: 1.096679 | lr: 0.000865 | dt: 6ms | epoch: 2 | remaining: 125s    
+step 25600 (58.6%) | loss: 1.099105 | lr: 0.000864 | dt: 6ms | epoch: 2 | remaining: 124s    
+step 25700 (58.8%) | loss: 1.091694 | lr: 0.000862 | dt: 6ms | epoch: 2 | remaining: 124s    
+step 25800 (59.0%) | loss: 1.083811 | lr: 0.000861 | dt: 6ms | epoch: 2 | remaining: 123s    
+step 25900 (59.2%) | loss: 1.087174 | lr: 0.000859 | dt: 6ms | epoch: 2 | remaining: 122s    
+step 26000 (59.4%) | loss: 1.119650 | lr: 0.000858 | dt: 6ms | epoch: 2 | remaining: 122s    
+step 26100 (59.6%) | loss: 1.098153 | lr: 0.000856 | dt: 6ms | epoch: 2 | remaining: 121s    
+step 26200 (59.8%) | loss: 1.083921 | lr: 0.000855 | dt: 6ms | epoch: 2 | remaining: 121s    
+step 26300 (60.0%) | loss: 1.105738 | lr: 0.000853 | dt: 6ms | epoch: 2 | remaining: 120s    
+step 26400 (60.2%) | loss: 1.083431 | lr: 0.000852 | dt: 6ms | epoch: 2 | remaining: 120s    
+step 26500 (60.4%) | loss: 1.097743 | lr: 0.000850 | dt: 6ms | epoch: 2 | remaining: 119s    
+step 26600 (60.6%) | loss: 1.090763 | lr: 0.000849 | dt: 6ms | epoch: 2 | remaining: 118s    
+step 26700 (60.7%) | loss: 1.106482 | lr: 0.000847 | dt: 6ms | epoch: 2 | remaining: 118s    
+step 26800 (60.9%) | loss: 1.096772 | lr: 0.000846 | dt: 6ms | epoch: 2 | remaining: 117s    
+step 26900 (61.1%) | loss: 1.104896 | lr: 0.000844 | dt: 6ms | epoch: 2 | remaining: 117s    
+  Epoch 2 done | avg_loss: 1.098418 | val_acc: 0.5582 | best: 0.5626
+
+step 27000 (61.3%) | loss: 1.103655 | lr: 0.000842 | dt: 6ms | epoch: 3 | remaining: 116s    
+step 27100 (61.5%) | loss: 1.098276 | lr: 0.000841 | dt: 6ms | epoch: 3 | remaining: 115s    
+step 27200 (61.7%) | loss: 1.087312 | lr: 0.000839 | dt: 6ms | epoch: 3 | remaining: 115s    
+step 27300 (61.9%) | loss: 1.099129 | lr: 0.000838 | dt: 6ms | epoch: 3 | remaining: 114s    
+step 27400 (62.1%) | loss: 1.101936 | lr: 0.000836 | dt: 6ms | epoch: 3 | remaining: 114s    
+step 27500 (62.3%) | loss: 1.101908 | lr: 0.000835 | dt: 6ms | epoch: 3 | remaining: 113s    
+step 27600 (62.5%) | loss: 1.088660 | lr: 0.000833 | dt: 6ms | epoch: 3 | remaining: 112s    
+step 27700 (62.7%) | loss: 1.104005 | lr: 0.000831 | dt: 6ms | epoch: 3 | remaining: 112s    
+step 27800 (62.9%) | loss: 1.092933 | lr: 0.000830 | dt: 6ms | epoch: 3 | remaining: 111s    
+step 27900 (63.1%) | loss: 1.081203 | lr: 0.000828 | dt: 10ms | epoch: 3 | remaining: 111s    
+step 28000 (63.3%) | loss: 1.087055 | lr: 0.000826 | dt: 7ms | epoch: 3 | remaining: 110s    
+step 28100 (63.5%) | loss: 1.094930 | lr: 0.000825 | dt: 7ms | epoch: 3 | remaining: 109s    
+step 28200 (63.7%) | loss: 1.107457 | lr: 0.000823 | dt: 6ms | epoch: 3 | remaining: 109s    
+step 28300 (63.9%) | loss: 1.083461 | lr: 0.000821 | dt: 7ms | epoch: 3 | remaining: 108s    
+step 28400 (64.2%) | loss: 1.102233 | lr: 0.000820 | dt: 6ms | epoch: 3 | remaining: 108s    
+step 28500 (64.4%) | loss: 1.106973 | lr: 0.000818 | dt: 6ms | epoch: 3 | remaining: 107s    
+step 28600 (64.5%) | loss: 1.109752 | lr: 0.000816 | dt: 6ms | epoch: 3 | remaining: 106s    
+step 28700 (64.7%) | loss: 1.095135 | lr: 0.000815 | dt: 6ms | epoch: 3 | remaining: 106s    
+step 28800 (64.9%) | loss: 1.101988 | lr: 0.000813 | dt: 6ms | epoch: 3 | remaining: 105s    
+step 28900 (65.1%) | loss: 1.099243 | lr: 0.000811 | dt: 6ms | epoch: 3 | remaining: 105s    
+step 29000 (65.3%) | loss: 1.098746 | lr: 0.000810 | dt: 6ms | epoch: 3 | remaining: 104s    
+step 29100 (65.5%) | loss: 1.097858 | lr: 0.000808 | dt: 6ms | epoch: 3 | remaining: 103s    
+step 29200 (65.7%) | loss: 1.075170 | lr: 0.000806 | dt: 8ms | epoch: 3 | remaining: 103s    
+step 29300 (65.9%) | loss: 1.091509 | lr: 0.000805 | dt: 6ms | epoch: 3 | remaining: 102s    
+step 29400 (66.1%) | loss: 1.091695 | lr: 0.000803 | dt: 6ms | epoch: 3 | remaining: 102s    
+step 29500 (66.3%) | loss: 1.090951 | lr: 0.000801 | dt: 6ms | epoch: 3 | remaining: 101s    
+step 29600 (66.5%) | loss: 1.091212 | lr: 0.000799 | dt: 6ms | epoch: 3 | remaining: 100s    
+step 29700 (66.7%) | loss: 1.088083 | lr: 0.000798 | dt: 6ms | epoch: 3 | remaining: 100s    
+step 29800 (66.9%) | loss: 1.091439 | lr: 0.000796 | dt: 6ms | epoch: 3 | remaining: 99s    
+step 29900 (67.1%) | loss: 1.101722 | lr: 0.000794 | dt: 6ms | epoch: 3 | remaining: 99s    
+step 30000 (67.3%) | loss: 1.096308 | lr: 0.000793 | dt: 6ms | epoch: 3 | remaining: 98s    
+step 30100 (67.5%) | loss: 1.096165 | lr: 0.000791 | dt: 6ms | epoch: 3 | remaining: 98s    
+step 30200 (67.7%) | loss: 1.097199 | lr: 0.000789 | dt: 6ms | epoch: 3 | remaining: 97s    
+step 30300 (67.9%) | loss: 1.100925 | lr: 0.000787 | dt: 9ms | epoch: 3 | remaining: 96s    
+step 30400 (68.2%) | loss: 1.096857 | lr: 0.000785 | dt: 10ms | epoch: 3 | remaining: 95s    
+step 30500 (68.4%) | loss: 1.109330 | lr: 0.000784 | dt: 10ms | epoch: 3 | remaining: 95s    
+step 30600 (68.7%) | loss: 1.097653 | lr: 0.000782 | dt: 6ms | epoch: 3 | remaining: 94s    
+step 30700 (68.9%) | loss: 1.099183 | lr: 0.000780 | dt: 10ms | epoch: 3 | remaining: 93s    
+step 30800 (69.2%) | loss: 1.088048 | lr: 0.000778 | dt: 8ms | epoch: 3 | remaining: 92s    
+step 30900 (69.4%) | loss: 1.088353 | lr: 0.000777 | dt: 10ms | epoch: 3 | remaining: 92s    
+step 31000 (69.7%) | loss: 1.091066 | lr: 0.000775 | dt: 9ms | epoch: 3 | remaining: 91s    
+step 31100 (69.9%) | loss: 1.093316 | lr: 0.000773 | dt: 10ms | epoch: 3 | remaining: 90s    
+step 31200 (70.2%) | loss: 1.099668 | lr: 0.000771 | dt: 10ms | epoch: 3 | remaining: 89s    
+step 31300 (70.5%) | loss: 1.087511 | lr: 0.000769 | dt: 6ms | epoch: 3 | remaining: 89s    
+step 31400 (70.7%) | loss: 1.092020 | lr: 0.000768 | dt: 6ms | epoch: 3 | remaining: 88s    
+step 31500 (71.0%) | loss: 1.090197 | lr: 0.000766 | dt: 10ms | epoch: 3 | remaining: 87s    
+step 31600 (71.2%) | loss: 1.085017 | lr: 0.000764 | dt: 9ms | epoch: 3 | remaining: 86s    
+step 31700 (71.5%) | loss: 1.094841 | lr: 0.000762 | dt: 6ms | epoch: 3 | remaining: 86s    
+step 31800 (71.7%) | loss: 1.087255 | lr: 0.000760 | dt: 6ms | epoch: 3 | remaining: 85s    
+step 31900 (72.0%) | loss: 1.105013 | lr: 0.000758 | dt: 6ms | epoch: 3 | remaining: 84s    
+step 32000 (72.2%) | loss: 1.110842 | lr: 0.000756 | dt: 6ms | epoch: 3 | remaining: 83s    
+step 32100 (72.5%) | loss: 1.100896 | lr: 0.000755 | dt: 6ms | epoch: 3 | remaining: 83s    
+step 32200 (72.8%) | loss: 1.100885 | lr: 0.000753 | dt: 6ms | epoch: 3 | remaining: 82s    
+step 32300 (73.0%) | loss: 1.097034 | lr: 0.000751 | dt: 6ms | epoch: 3 | remaining: 81s    
+step 32400 (73.3%) | loss: 1.099986 | lr: 0.000749 | dt: 6ms | epoch: 3 | remaining: 80s    
+step 32500 (73.5%) | loss: 1.087168 | lr: 0.000747 | dt: 5ms | epoch: 3 | remaining: 79s    
+step 32600 (73.8%) | loss: 1.099445 | lr: 0.000745 | dt: 6ms | epoch: 3 | remaining: 79s    
+step 32700 (74.0%) | loss: 1.100815 | lr: 0.000743 | dt: 10ms | epoch: 3 | remaining: 78s    
+step 32800 (74.3%) | loss: 1.099827 | lr: 0.000742 | dt: 6ms | epoch: 3 | remaining: 77s    
+step 32900 (74.5%) | loss: 1.102150 | lr: 0.000740 | dt: 6ms | epoch: 3 | remaining: 76s    
+step 33000 (74.8%) | loss: 1.094353 | lr: 0.000738 | dt: 6ms | epoch: 3 | remaining: 76s    
+step 33100 (75.0%) | loss: 1.093478 | lr: 0.000736 | dt: 12ms | epoch: 3 | remaining: 75s    
+step 33200 (75.2%) | loss: 1.100757 | lr: 0.000734 | dt: 6ms | epoch: 3 | remaining: 74s    
+step 33300 (75.4%) | loss: 1.083338 | lr: 0.000732 | dt: 7ms | epoch: 3 | remaining: 74s    
+step 33400 (75.6%) | loss: 1.100973 | lr: 0.000730 | dt: 5ms | epoch: 3 | remaining: 73s    
+step 33500 (75.9%) | loss: 1.085318 | lr: 0.000728 | dt: 8ms | epoch: 3 | remaining: 72s    
+step 33600 (76.2%) | loss: 1.102526 | lr: 0.000726 | dt: 15ms | epoch: 3 | remaining: 71s    
+step 33700 (76.5%) | loss: 1.095184 | lr: 0.000724 | dt: 6ms | epoch: 3 | remaining: 71s    
+step 33800 (76.7%) | loss: 1.092239 | lr: 0.000722 | dt: 6ms | epoch: 3 | remaining: 70s    
+step 33900 (76.9%) | loss: 1.098555 | lr: 0.000720 | dt: 6ms | epoch: 3 | remaining: 69s    
+step 34000 (77.1%) | loss: 1.095635 | lr: 0.000719 | dt: 6ms | epoch: 3 | remaining: 69s    
+step 34100 (77.3%) | loss: 1.094946 | lr: 0.000717 | dt: 6ms | epoch: 3 | remaining: 68s    
+step 34200 (77.5%) | loss: 1.085108 | lr: 0.000715 | dt: 13ms | epoch: 3 | remaining: 68s    
+step 34300 (77.7%) | loss: 1.088906 | lr: 0.000713 | dt: 6ms | epoch: 3 | remaining: 67s    
+step 34400 (78.0%) | loss: 1.090532 | lr: 0.000711 | dt: 7ms | epoch: 3 | remaining: 66s    
+step 34500 (78.2%) | loss: 1.098091 | lr: 0.000709 | dt: 12ms | epoch: 3 | remaining: 65s    
+step 34600 (78.4%) | loss: 1.104957 | lr: 0.000707 | dt: 6ms | epoch: 3 | remaining: 65s    
+step 34700 (78.7%) | loss: 1.106834 | lr: 0.000705 | dt: 6ms | epoch: 3 | remaining: 64s    
+step 34800 (79.0%) | loss: 1.093778 | lr: 0.000703 | dt: 6ms | epoch: 3 | remaining: 63s    
+step 34900 (79.2%) | loss: 1.114569 | lr: 0.000701 | dt: 6ms | epoch: 3 | remaining: 62s    
+step 35000 (79.5%) | loss: 1.088977 | lr: 0.000699 | dt: 8ms | epoch: 3 | remaining: 62s    
+step 35100 (79.7%) | loss: 1.095213 | lr: 0.000697 | dt: 10ms | epoch: 3 | remaining: 61s    
+step 35200 (80.0%) | loss: 1.093994 | lr: 0.000695 | dt: 6ms | epoch: 3 | remaining: 60s    
+step 35300 (80.2%) | loss: 1.098118 | lr: 0.000693 | dt: 9ms | epoch: 3 | remaining: 59s    
+step 35400 (80.5%) | loss: 1.104953 | lr: 0.000691 | dt: 10ms | epoch: 3 | remaining: 59s    
+step 35500 (80.7%) | loss: 1.104209 | lr: 0.000689 | dt: 6ms | epoch: 3 | remaining: 58s    
+step 35600 (81.0%) | loss: 1.103449 | lr: 0.000687 | dt: 6ms | epoch: 3 | remaining: 57s    
+step 35700 (81.2%) | loss: 1.096414 | lr: 0.000685 | dt: 6ms | epoch: 3 | remaining: 56s    
+step 35800 (81.5%) | loss: 1.090976 | lr: 0.000683 | dt: 6ms | epoch: 3 | remaining: 56s    
+step 35900 (81.8%) | loss: 1.095289 | lr: 0.000681 | dt: 6ms | epoch: 3 | remaining: 55s    
+step 36000 (82.0%) | loss: 1.092649 | lr: 0.000679 | dt: 6ms | epoch: 3 | remaining: 54s    
+step 36100 (82.2%) | loss: 1.083531 | lr: 0.000677 | dt: 9ms | epoch: 3 | remaining: 53s    
+step 36200 (82.5%) | loss: 1.097031 | lr: 0.000675 | dt: 9ms | epoch: 3 | remaining: 53s    
+step 36300 (82.7%) | loss: 1.099866 | lr: 0.000673 | dt: 6ms | epoch: 3 | remaining: 52s    
+step 36400 (83.0%) | loss: 1.107802 | lr: 0.000671 | dt: 10ms | epoch: 3 | remaining: 51s    
+step 36500 (83.3%) | loss: 1.090226 | lr: 0.000669 | dt: 9ms | epoch: 3 | remaining: 50s    
+step 36600 (83.5%) | loss: 1.092581 | lr: 0.000667 | dt: 9ms | epoch: 3 | remaining: 49s    
+step 36700 (83.8%) | loss: 1.093935 | lr: 0.000665 | dt: 6ms | epoch: 3 | remaining: 49s    
+step 36800 (84.0%) | loss: 1.093566 | lr: 0.000663 | dt: 6ms | epoch: 3 | remaining: 48s    
+step 36900 (84.3%) | loss: 1.096265 | lr: 0.000661 | dt: 6ms | epoch: 3 | remaining: 47s    
+step 37000 (84.5%) | loss: 1.103132 | lr: 0.000659 | dt: 6ms | epoch: 3 | remaining: 46s    
+step 37100 (84.8%) | loss: 1.095361 | lr: 0.000657 | dt: 9ms | epoch: 3 | remaining: 46s    
+step 37200 (85.0%) | loss: 1.085734 | lr: 0.000655 | dt: 9ms | epoch: 3 | remaining: 45s    
+step 37300 (85.3%) | loss: 1.099382 | lr: 0.000652 | dt: 6ms | epoch: 3 | remaining: 44s    
+step 37400 (85.5%) | loss: 1.081001 | lr: 0.000650 | dt: 6ms | epoch: 3 | remaining: 43s    
+step 37500 (85.8%) | loss: 1.096963 | lr: 0.000648 | dt: 10ms | epoch: 3 | remaining: 43s    
+step 37600 (86.0%) | loss: 1.098509 | lr: 0.000646 | dt: 10ms | epoch: 3 | remaining: 42s    
+step 37700 (86.3%) | loss: 1.085368 | lr: 0.000644 | dt: 6ms | epoch: 3 | remaining: 41s    
+step 37800 (86.5%) | loss: 1.109760 | lr: 0.000642 | dt: 6ms | epoch: 3 | remaining: 40s    
+step 37900 (86.8%) | loss: 1.088270 | lr: 0.000640 | dt: 10ms | epoch: 3 | remaining: 40s    
+step 38000 (87.1%) | loss: 1.093155 | lr: 0.000638 | dt: 10ms | epoch: 3 | remaining: 39s    
+step 38100 (87.3%) | loss: 1.097657 | lr: 0.000636 | dt: 10ms | epoch: 3 | remaining: 38s    
+step 38200 (87.6%) | loss: 1.099727 | lr: 0.000634 | dt: 9ms | epoch: 3 | remaining: 37s    
+step 38300 (87.8%) | loss: 1.078707 | lr: 0.000632 | dt: 10ms | epoch: 3 | remaining: 37s    
+step 38400 (88.1%) | loss: 1.102134 | lr: 0.000630 | dt: 10ms | epoch: 3 | remaining: 36s    
+step 38500 (88.3%) | loss: 1.112011 | lr: 0.000628 | dt: 10ms | epoch: 3 | remaining: 35s    
+step 38600 (88.6%) | loss: 1.100036 | lr: 0.000626 | dt: 9ms | epoch: 3 | remaining: 34s    
+step 38700 (88.8%) | loss: 1.094206 | lr: 0.000623 | dt: 6ms | epoch: 3 | remaining: 33s    
+step 38800 (89.1%) | loss: 1.095233 | lr: 0.000621 | dt: 6ms | epoch: 3 | remaining: 33s    
+step 38900 (89.3%) | loss: 1.088712 | lr: 0.000619 | dt: 10ms | epoch: 3 | remaining: 32s    
+step 39000 (89.6%) | loss: 1.092250 | lr: 0.000617 | dt: 10ms | epoch: 3 | remaining: 31s    
+step 39100 (89.9%) | loss: 1.099114 | lr: 0.000615 | dt: 6ms | epoch: 3 | remaining: 30s    
+step 39200 (90.1%) | loss: 1.103647 | lr: 0.000613 | dt: 6ms | epoch: 3 | remaining: 30s    
+step 39300 (90.4%) | loss: 1.090322 | lr: 0.000611 | dt: 6ms | epoch: 3 | remaining: 29s    
+step 39400 (90.6%) | loss: 1.108813 | lr: 0.000609 | dt: 6ms | epoch: 3 | remaining: 28s    
+step 39500 (90.9%) | loss: 1.101879 | lr: 0.000607 | dt: 6ms | epoch: 3 | remaining: 27s    
+step 39600 (91.1%) | loss: 1.104723 | lr: 0.000605 | dt: 6ms | epoch: 3 | remaining: 27s    
+step 39700 (91.4%) | loss: 1.095994 | lr: 0.000602 | dt: 6ms | epoch: 3 | remaining: 26s    
+step 39800 (91.6%) | loss: 1.086585 | lr: 0.000600 | dt: 6ms | epoch: 3 | remaining: 25s    
+step 39900 (91.9%) | loss: 1.090237 | lr: 0.000598 | dt: 6ms | epoch: 3 | remaining: 24s    
+step 40000 (92.2%) | loss: 1.095351 | lr: 0.000596 | dt: 6ms | epoch: 3 | remaining: 24s    
+step 40100 (92.4%) | loss: 1.108125 | lr: 0.000594 | dt: 6ms | epoch: 3 | remaining: 23s    
+step 40200 (92.7%) | loss: 1.097885 | lr: 0.000592 | dt: 6ms | epoch: 3 | remaining: 22s    
+step 40300 (92.9%) | loss: 1.095123 | lr: 0.000590 | dt: 10ms | epoch: 3 | remaining: 21s    
+step 40400 (93.2%) | loss: 1.092576 | lr: 0.000588 | dt: 10ms | epoch: 3 | remaining: 20s    
+  Epoch 3 done | avg_loss: 1.096015 | val_acc: 0.5743 | best: 0.5743
+
+step 40500 (93.4%) | loss: 1.100240 | lr: 0.000585 | dt: 10ms | epoch: 4 | remaining: 20s    
+step 40600 (93.7%) | loss: 1.087336 | lr: 0.000583 | dt: 9ms | epoch: 4 | remaining: 19s    
+step 40700 (93.9%) | loss: 1.083082 | lr: 0.000581 | dt: 6ms | epoch: 4 | remaining: 18s    
+step 40800 (94.2%) | loss: 1.074608 | lr: 0.000579 | dt: 6ms | epoch: 4 | remaining: 17s    
+step 40900 (94.5%) | loss: 1.112282 | lr: 0.000577 | dt: 10ms | epoch: 4 | remaining: 17s    
+step 41000 (94.7%) | loss: 1.107540 | lr: 0.000575 | dt: 10ms | epoch: 4 | remaining: 16s    
+step 41100 (95.0%) | loss: 1.094068 | lr: 0.000573 | dt: 6ms | epoch: 4 | remaining: 15s    
+step 41200 (95.2%) | loss: 1.080814 | lr: 0.000571 | dt: 6ms | epoch: 4 | remaining: 14s    
+step 41300 (95.5%) | loss: 1.098653 | lr: 0.000568 | dt: 6ms | epoch: 4 | remaining: 14s    
+step 41400 (95.7%) | loss: 1.087520 | lr: 0.000566 | dt: 6ms | epoch: 4 | remaining: 13s    
+step 41500 (96.0%) | loss: 1.097908 | lr: 0.000564 | dt: 6ms | epoch: 4 | remaining: 12s    
+step 41600 (96.2%) | loss: 1.109226 | lr: 0.000562 | dt: 6ms | epoch: 4 | remaining: 11s    
+step 41700 (96.5%) | loss: 1.092258 | lr: 0.000560 | dt: 6ms | epoch: 4 | remaining: 10s    
+step 41800 (96.8%) | loss: 1.084890 | lr: 0.000558 | dt: 6ms | epoch: 4 | remaining: 10s    
+step 41900 (97.0%) | loss: 1.093457 | lr: 0.000556 | dt: 6ms | epoch: 4 | remaining: 9s    
+step 42000 (97.3%) | loss: 1.102073 | lr: 0.000553 | dt: 6ms | epoch: 4 | remaining: 8s    
+step 42100 (97.5%) | loss: 1.096607 | lr: 0.000551 | dt: 6ms | epoch: 4 | remaining: 7s    
+step 42200 (97.8%) | loss: 1.106793 | lr: 0.000549 | dt: 6ms | epoch: 4 | remaining: 7s    
+step 42300 (98.0%) | loss: 1.105958 | lr: 0.000547 | dt: 5ms | epoch: 4 | remaining: 6s    
+step 42400 (98.2%) | loss: 1.092349 | lr: 0.000545 | dt: 6ms | epoch: 4 | remaining: 5s    
+step 42500 (98.5%) | loss: 1.091217 | lr: 0.000543 | dt: 6ms | epoch: 4 | remaining: 5s    
+step 42600 (98.7%) | loss: 1.094113 | lr: 0.000541 | dt: 6ms | epoch: 4 | remaining: 4s    
+step 42700 (99.0%) | loss: 1.089392 | lr: 0.000538 | dt: 9ms | epoch: 4 | remaining: 3s    
+step 42800 (99.2%) | loss: 1.082507 | lr: 0.000536 | dt: 6ms | epoch: 4 | remaining: 2s    
+step 42900 (99.5%) | loss: 1.101678 | lr: 0.000534 | dt: 6ms | epoch: 4 | remaining: 1s    
+step 43000 (99.8%) | loss: 1.093119 | lr: 0.000532 | dt: 6ms | epoch: 4 | remaining: 1s    
+
+--- Final Evaluation ---
+
+--- Tactical Analysis ---
+Overall val accuracy:      0.5788
+Key-point accuracy:        0.7768 (33,198 pts)
+Regular-point accuracy:    0.4691 (59,895 pts)
+Key vs Regular gap:        +30.77%
+
+--- Serve Width → Server Win Rate (Val Set, Empirical) ---
+  W  : overall 71.5% | key-pts 67.3% (7222 pts)
+  C  : overall 68.5% | key-pts 65.2% (8567 pts)
+  B  : overall 53.4% | key-pts 48.9% (4114 pts)
+  BC : overall 54.2% | key-pts 51.5% (6352 pts)
+  BW : overall 55.4% | key-pts 50.9% (6552 pts)
+
+--- Rally Length → Server Win Rate (Val Set) ---
+  Short (1-3)    : server wins 77.2% (41,653 pts)
+  Medium (4-6)   : server wins 36.6% (15,803 pts)
+  Long (7+)      : server wins 57.1% (11,829 pts)
+
+--- Distance Run (Val Set) ---
+  Mean P1 distance: 15.3m
+  Mean P2 distance: 15.2m
+  Player who runs more → wins 38.0% of points (lower = disadvantage)
+
+---
+val_accuracy:     0.578841
+val_auc:          0.612300
+kp_accuracy:      0.776824
+reg_accuracy:     0.469104
+kp_gap:           +30.77%
+training_seconds: 300.0
+total_seconds:    362.0
+peak_vram_mb:     0.0
+total_steps:      43095
+num_params:       62086
+model_type:       mtl_lstm
+hidden_dim:       64
+num_layers:       2
+seq_len:          10
+batch_size:       128
+learning_rate:    0.001
+key_point_weight: 2.0
+epochs:           4
+2026-03-17 12:20:58.015 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_58-2746198123‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:20:58.670 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_58-1381532756‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:20:58.706 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_58-1266638161‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:20:58.737 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_58-1936084310‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:20:59.084 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_59-815011550‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:20:59.141 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_59-3437574774‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:20:59.143 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_59-3420284853‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:20:59.145 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_59-1479751046‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:20:59.187 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_59-3451512907‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:20:59.304 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_59-1318994004‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:20:59.536 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_59-3028205266‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:20:59.538 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_59-4040948249‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:20:59.792 python[45215:336513] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_59-740561641‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:20:59.928 python[45215:336513] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_20_59-4223706140‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:00.062 python[45215:336513] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_00-1354865917‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:00.117 python[45215:336513] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_00-4058537966‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:00.164 python[45215:336513] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_00-931430013‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:00.381 python[45215:336513] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_00-3093576311‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:00.425 python[45215:336513] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_00-474756440‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:00.470 python[45215:336513] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_00-1841172057‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:00.515 python[45215:336513] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_00-3176308223‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:00.555 python[45215:336513] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_00-2198503777‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:00.602 python[45215:336513] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_00-3420433170‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:00.823 python[45215:336513] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_00-1094680242‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:01.276 python[45215:336513] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_01-648482055‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:01.945 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_01-652922786‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.042 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-2311336731‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.044 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-3688453632‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.135 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-1715191808‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.137 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-1359210684‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.139 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-399651372‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.141 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-3001204149‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.232 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-3354447‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.265 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-2921235046‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.268 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-4194376295‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.271 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-3730515630‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.273 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-2440897660‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.312 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-256408593‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.367 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-868020176‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.417 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-2829963444‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.419 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-2020399040‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.421 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-3040802939‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.469 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-56569740‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.518 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-3116983243‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.519 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-2234853865‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.521 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-3371591452‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.523 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-668475489‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.524 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-3815362669‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.526 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-281450044‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.527 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-1142168648‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.529 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-3679699931‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.530 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-2293795364‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.580 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-343401083‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.627 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-1511057622‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.629 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-4045195260‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.631 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-1025645951‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:21:02.632 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_21_02-1720071382‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:22:54.718 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_22_54-2805966064‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:22:55.019 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_22_55-1720180625‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:26:46.090 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_26_46-2019382688‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:26:46.131 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_26_46-1972601330‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:26:46.188 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_26_46-1319723519‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:26:46.246 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_26_46-1666663488‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:26:46.279 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_26_46-1613269977‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:26:46.370 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_26_46-1324957653‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:26:50.516 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_26_50-3915520826‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:26:50.518 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_26_50-3198740498‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:26:50.520 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_26_50-2775043863‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:26:50.522 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_26_50-131408878‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:26:50.523 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_26_50-293127859‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:26:50.524 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_26_50-790283905‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.
+2026-03-17 12:26:50.527 python[45215:336224] Error creating directory 
+ You don‚Äôt have permission. You don‚Äôt have permission to save the file ‚Äúmpsgraph-45215-2026-03-17_12_26_50-1506256202‚Äù in the folder ‚Äúcom.apple.MetalPerformanceShadersGraph‚Äù.

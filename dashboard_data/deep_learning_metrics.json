@@ -1,0 +1,6 @@
+{
+  "hist_gb_accuracy": 0.9857587894971073,
+  "lstm_momentum_accuracy": 0.6217243448689738,
+  "transformer_attention_accuracy": 0.5393078615723145,
+  "autoencoder_anomaly_threshold": 1.6892753839492798
+}

@@ -1,0 +1,4 @@
+commit	val_accuracy	val_auc	kp_accuracy	reg_accuracy	status	description
+baseline	0.575607	0.610216	0.788180	0.457784	keep	baseline LSTM (1.7M pts, weighted loss)
+exp1	0.566444	0.603155	0.804115	0.434711	discard	Transformer (lr=0.0005, wd=1e-4)
+exp2	0.578841	0.612300	0.776824	0.469104	keep	MTLLSTM (Serve direction auxiliary task)
